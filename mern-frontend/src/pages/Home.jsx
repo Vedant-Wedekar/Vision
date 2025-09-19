@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import api from '../api/axios';
 import { AuthContext } from '../context/AuthContext';
+import HeroSection from '../components/HeroSection';
 
 const sampleMovies = [
   { movieId: 'm1', title: 'Movie One', poster: 'https://via.placeholder.com/200x300' },
@@ -28,6 +29,9 @@ export default function Home() {
     <div>
       <Header />
       <Sidebar />
+      <HeroSection addToWatchLater={addToWatchLater} />
+
+      <div className="h-16 text-black mt-100 ml-100"> hey mother fucker  </div>
       {/* main content area, leave spacing for header and sidebar */}
       <main className="ml-56 pt-16 px-6">
         <div className="max-w-7xl mx-auto">
