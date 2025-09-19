@@ -1,9 +1,11 @@
-import React, { useContext } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Home from './pages/Home';
-import { AuthContext } from './context/AuthContext';
+import React, { useContext, useState } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Home from "./pages/Home";
+import WatchLater from "./pages/WatchLater";
+import Player from "./pages/Player";
+import { AuthContext } from "./context/AuthContext";
 
 function Protected({ children }) {
   const { token, loading } = useContext(AuthContext);
@@ -12,11 +14,46 @@ function Protected({ children }) {
 }
 
 export default function App() {
+  // Watch Later state (global for this session)
+  const [watchLater, setWatchLater] = useState([]);
+
+  const addToWatchLater = (movie) => {
+    if (!watchLater.find((m) => m.id === movie.id)) {
+      setWatchLater([...watchLater, movie]);
+    }
+  };
+
   return (
     <Routes>
+      {/* Auth Routes */}
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/" element={<Protected><Home /></Protected>} />
+
+      {/* Protected Routes */}
+      <Route
+        path="/"
+        element={
+          <Protected>
+            <Home addToWatchLater={addToWatchLater} />
+          </Protected>
+        }
+      />
+      <Route
+        path="/watch-later"
+        element={
+          <Protected>
+            <WatchLater watchLater={watchLater} />
+          </Protected>
+        }
+      />
+      <Route
+        path="/player/:id"
+        element={
+          <Protected>
+            <Player />
+          </Protected>
+        }
+      />
     </Routes>
   );
 }
