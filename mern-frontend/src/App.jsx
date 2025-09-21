@@ -5,6 +5,7 @@ import Register from "./pages/Register";
 import Home from "./pages/Home";
 import WatchLater from "./pages/WatchLater";
 import Player from "./pages/Player";
+import TopTrending from "./pages/TopTranding";
 import { AuthContext } from "./context/AuthContext";
 
 function Protected({ children }) {
@@ -38,8 +39,17 @@ export default function App() {
           </Protected>
         }
       />
+      
+<Route
+  path="/top"
+  element={
+    <Protected>
+      <TopTrending addToWatchLater={addToWatchLater} />
+    </Protected>
+  }
+/>
       <Route
-        path="/watch-later"
+        path="/watchlater"
         element={
           <Protected>
             <WatchLater watchLater={watchLater} />
@@ -55,5 +65,6 @@ export default function App() {
         }
       />
     </Routes>
+
   );
 }
