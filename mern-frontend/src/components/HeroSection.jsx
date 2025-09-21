@@ -13,18 +13,18 @@ export default function HeroSection({ addToWatchLater }) {
   const navigate = useNavigate();
 
   return (
-    <div className="relative w-[89%] ml-40 mt-14 h-[100vh] overflow-hidden">
+    <div className=" w-[89%] ml-40 mt-14 h-[1000px]">
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation
         autoplay={{ delay: 5000 }}
         loop
-        className="h-[70vh]"
+        className="h-[120vh]"
       >
         {movies.map((movie) => (
           <SwiperSlide key={movie.id}>
             <div
-              className="relative w-full h-full rounded-xl overflow-hidden shadow-lg"
+              className="relative w-full h-[800px] rounded-xl   shadow-lg"
               onMouseEnter={() => setHovered(movie.id)}
               onMouseLeave={() => setHovered(null)}
             >
@@ -35,18 +35,18 @@ export default function HeroSection({ addToWatchLater }) {
                   autoPlay
                   muted
                   loop
-                  className="w-full h-full object-cover"
+                  className="w-full h-[800px] object-cover"
                 />
               ) : (
                 <img
                   src={movie.img}
                   alt={movie.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-[800px] object-cover"
                 />
               )}
 
               {/* Overlay */}
-              <div className="absolute top-20 left-10 bg-gradient-to-r from-black/70 to-transparent text-white max-w-xl p-4 rounded-xl">
+              <div className="absolute top-0 left-0 h-[100%] bg-gradient-to-r from-black/70 to-transparent text-white  max-w-xl pl-15 pt-120 rounded-xl">
                 <h1 className="text-5xl font-bold">{movie.title}</h1>
                 <div className="flex gap-3 mt-2 text-sm text-gray-200">
                   <span>{movie.year}</span>•
