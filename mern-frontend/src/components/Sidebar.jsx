@@ -12,7 +12,7 @@ export default function Sidebar() {
     { to: '/music', label: 'Music' },
     { to: '/category', label: 'Category' },
     { to: '/profile', label: 'Profile' },
-    { to: '/watch-later', label: 'Watch Later' }  // ✅ Fixed path
+   { to: '/watchlater', label: 'Watch Later' } 
   ];
 
   const handleLogout = () => {
