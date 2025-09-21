@@ -1,4 +1,6 @@
 // moviesData.js
+
+import Ban from './Video/banner.mp4'
 export const movies = [
   {
     id: 1,
@@ -10,8 +12,8 @@ export const movies = [
     description:
       "Elio, a space fanatic, lands in a cosmic misadventure when he is beamed up to an interplanetary organization and mistaken for Earth’s leader.",
     keywords: ["Comedy", "Adventure", "Science Fiction", "Family"],
-    img: "https://i.ibb.co/6w4mQzW/elio.jpg",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4",
+    img: "https://img10.hotstar.com/image/upload/f_auto,q_auto/sources/r1/cms/prod/7541/1756877597541-i",
+    video:Ban,
     cast: ["Adrian Molina", "Yonas Kibreab", "America Ferrera"]
   },
 ];

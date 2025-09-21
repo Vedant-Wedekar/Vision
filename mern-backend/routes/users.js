@@ -46,3 +46,4 @@ router.delete('/watchlater/:movieId', auth, async (req, res) => {
 });
 
 module.exports = router;
+  
