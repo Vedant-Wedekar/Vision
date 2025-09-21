@@ -6,10 +6,10 @@ export default function Player() {
   const { id } = useParams();
   const movie = movies.find((m) => m.id === parseInt(id));
 
-  if (!movie) return <p className="text-white">Movie not found</p>;
+  if (!movie) return <p className="text-black">Movie not found</p>;
 
   return (
-    <div className="p-10 text-white">
+    <div className="p-10 text-black">
       {/* Video player */}
       <video src={movie.video} controls autoPlay className="w-full rounded-lg" />
 
