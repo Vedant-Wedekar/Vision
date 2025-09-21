@@ -3,7 +3,7 @@ import Log from '../assets/logo.png';
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 h-14 bg-white shadow z-20">
+    <header className="fixed top-0 left-0 right-0 h-14 text-white bg-[#0F1014] shadow z-20">
       <div className="max-w-7xl mx-auto h-full flex items-center px-4">
         <img className='h-10' src={Log}></img>
         <div className="text-xl font-bold">Vision</div>
