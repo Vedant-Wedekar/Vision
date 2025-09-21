@@ -26,19 +26,18 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className='bg-[#0F1014]'>
       <Header />
       <Sidebar />
       <HeroSection addToWatchLater={addToWatchLater} />
 
-      <div className="h-16 text-black mt-100 ml-100"> hey mother fucker  </div>
       {/* main content area, leave spacing for header and sidebar */}
-      <main className="ml-56 pt-16 px-6">
+      <main className="ml-56 pt-16 px-6 text-">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-2xl font-bold mb-4">Welcome{user ? `, ${user.name}` : ''}</h1>
+          <h1 className="text-2xl font-bold mb-4 text-white">Welcome{user ? `, ${user.name}` : ''}</h1>
 
           <section>
-            <h2 className="text-xl mb-3">Popular</h2>
+            <h2 className="text-xl mb-3 text-white">Popular</h2>
             <div className="grid grid-cols-3 gap-4">
               {sampleMovies.map(m => (
                 <div key={m.movieId} className="bg-white p-3 rounded shadow">
