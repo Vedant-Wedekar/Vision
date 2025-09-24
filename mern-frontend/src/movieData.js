@@ -15,10 +15,12 @@ export const movies = [
       "Elio, a space fanatic, lands in a cosmic misadventure when he is beamed up to an interplanetary organization and mistaken for Earth’s leader.",
     keywords: ["Comedy", "Adventure", "Science Fiction", "Family"],
     img: "https://img10.hotstar.com/image/upload/f_auto,q_auto/sources/r1/cms/prod/7541/1756877597541-i",
+    post:"https://i0.wp.com/pixarpost.com/wp-content/uploads/2024/11/ELIO_Teaser_2nd_Intro_1s_v4.0_A_Mech11_FS.jpg?resize=1080%2C1600&ssl=1",
     video: Ban,
     cast: ["Adrian Molina", "Yonas Kibreab", "America Ferrera"]
   },
   {
+    post:"https://play-lh.googleusercontent.com/OOhMvKSgqIcIVyHdq7-nobi_EKn0IFN71RoNrKHPtyhcdbOhLJINP_OqLO_aAlr7GOw-",
     id: 2,
     title: "BIG BOSS",
     year: 2025,
@@ -50,9 +52,11 @@ export const movies = [
     keywords: ["Family", "Adventure", "Comedy", "Remake"],
     img: "https://example.com/lilo-stitch.jpg",
     video: Ban,
+    post:"https://upload.wikimedia.org/wikipedia/en/5/56/Lilo_%26_Stitch_2025_Theatrical_Poster.jpg",
     cast: ["Maia Agudong", "Chris Sanders", "Sydney Elizbeth Agudong"]
   },
   {
+   
     id: 4,
     title: "Mission: Impossible – The Final Reckoning",
     year: 2025,
@@ -65,9 +69,11 @@ export const movies = [
     keywords: ["Action", "Thriller", "Spy", "Adventure"],
     img: "https://example.com/mi-final-reckoning.jpg",
     video: Ban,
-    cast: ["Tom Cruise", "Hayley Atwell", "Simon Pegg"]
+    cast: ["Tom Cruise", "Hayley Atwell", "Simon Pegg"] ,
+    post:" https://i.scdn.co/image/ab67616d0000b273633c6c0934eccaed2a9359be ",
   },
-  {
+  { 
+    post:"https://www.planet9productions.in/wp-content/uploads/2025/07/images-2025-07-04t154417.475-Bd3Iho.jpg",
     id: 5,
     title: "Jurassic World: Rebirth",
     year: 2025,
@@ -84,6 +90,7 @@ export const movies = [
   },
   {
     id: 6,
+    post:"https://dims.apnews.com/dims4/default/e2af095/2147483647/strip/false/crop/3000x2000+0+0/resize/1486x991!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F52%2F3a%2F0f802ca773c49a97e4caa6f7d607%2F44cd5101a5c2431a98f8a3955d21618e",
     title: "F1: The Movie",
     year: 2025,
     rating: "PG-13",
@@ -97,7 +104,22 @@ export const movies = [
     video: Ban,
     cast: ["Brad Pitt", "Various F1 Drivers"]
   },
-
+  {
+    id: 6,
+    post:"https://i.scdn.co/image/ab67616d0000b2738ce46991d86e744ef06a7a95",
+    title: "F1: The Movie",
+    year: 2025,
+    rating: "PG-13",
+    category: "hollywood",
+    length: "2h 10m",
+    languages: "English",
+    description:
+      "A high-octane documentary-style film capturing the thrills, risks, and human drama in the racing world of Formula 1.",
+    keywords: ["Sports", "Drama", "Documentary", "Action"],
+    img: "https://example.com/f1-movie.jpg",
+    video: Ban,
+    cast: ["Brad Pitt", "Various F1 Drivers"]
+  },
   // Top Trending Bollywood Movies
   {
     id: 7,
@@ -112,9 +134,11 @@ export const movies = [
     keywords: ["Historical", "Drama", "Epic", "Action"],
     img: "https://example.com/chhaava.jpg",
     video: Pan,
-    cast: ["Vicky Kaushal", "Supporting Cast"]
+    cast: ["Vicky Kaushal", "Supporting Cast"],
+    post:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWQdsThMg2bku1CzGtCoKwH9hECUQ3J4gOBw&s"
   },
   {
+    post:"https://upload.wikimedia.org/wikipedia/en/e/ec/Housefull_5.jpg",
     id: 8,
     title: "Housefull 5",
     year: 2025,
@@ -130,6 +154,7 @@ export const movies = [
     cast: ["Akshay Kumar", "Critics Cast"]
   },
   {
+    post:"https://m.media-amazon.com/images/M/MV5BMTk2ZmFhYjctYWZiYy00N2IxLWEzMWItZGRiMDY4ZDQwZWFlXkEyXkFqcGc@._V1_.jpg",
     id: 9,
     title: "Saiyaara",
     year: 2025,
@@ -145,6 +170,7 @@ export const movies = [
     cast: ["Ahaan Panday", "Aneet Padda"]
   },
   {
+    post:"https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Deva_2025_film_poster.jpg/250px-Deva_2025_film_poster.jpg",
     id: 10,
     title: "Deva",
     year: 2025,
@@ -159,7 +185,22 @@ export const movies = [
     video: Pan,
     cast: ["Shahid Kapoor", "Pooja Hegde", "Pavail Gulati"]
   },
-
+  {
+    post:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWlv_4P3c0g0nlGaFRCeevbIDGSM0LE0iyBg&s",
+    id: 10,
+    title: "Deva",
+    year: 2025,
+    rating: "U/A",
+    category: "bollywood",
+    length: "2h 36m",
+    languages: "Hindi",
+    description:
+      "A complex action thriller about a police officer who loses his memory and must solve a murder in the midst of a changing identity.",
+    keywords: ["Action", "Thriller", "Drama"],
+    img: "https://example.com/deva.jpg",
+    video: Pan,
+    cast: ["Shahid Kapoor", "Pooja Hegde", "Pavail Gulati"]
+  },
   // Tollywood (Telugu) Movies
   {
     id: 11,

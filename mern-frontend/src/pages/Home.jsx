@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar';
 import api from '../api/axios';
 import { AuthContext } from '../context/AuthContext';
 import HeroSection from '../components/HeroSection';
+import Footer from '../components/Footer';
 
 const sampleMovies = [
   { movieId: 'm1', title: 'Movie One', poster: 'https://via.placeholder.com/200x300' },
@@ -26,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <div className='bg-[#0F1014]'>
+    <div className='bg-[#0F1014] a'>
       <Header />
       <Sidebar />
       <HeroSection addToWatchLater={addToWatchLater} />
@@ -53,6 +54,7 @@ export default function Home() {
 
         </div>
       </main>
+      <Footer/>
     </div>
   );
 }

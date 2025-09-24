@@ -1,50 +1,67 @@
-import React, { useContext } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
-
+import React, { useContext } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
+import {
+  Home,
+  TrendingUp,
+  Music,
+  Grid,
+  User,
+  Clock,
+  LogOut,
+} from "lucide-react";
+import Log from "../assets/logo.png";
 export default function Sidebar() {
   const { logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const items = [
-    { to: '/', label: 'Home' },
-    { to: '/top', label: 'Top Trending' },
-    { to: '/music', label: 'Music' },
-    { to: '/category', label: 'Category' },
-    { to: '/profile', label: 'Profile' },
-   { to: '/watchlater', label: 'Watch Later' } 
+    { to: "/", icon: Home, label: "Home" },
+    { to: "/top", icon: TrendingUp, label: "Trending" },
+    { to: "/music", icon: Music, label: "Music" },
+    { to: "/category", icon: Grid, label: "Category" },
+    { to: "/profile", icon: User, label: "Profile" },
+    { to: "/watchlater", icon: Clock, label: "Watch Later" },
   ];
 
   const handleLogout = () => {
     logout();
-    navigate('/login');
+    navigate("/login");
   };
 
   return (
-    <nav className="fixed left-0 top-14 bottom-0 bg-gradient-to-r from-black from-25% to-transparent to-100% text-white border-r overflow-auto p-4">
-      <ul className="space-y-3 pt-10">
-        {items.map(it => (
+    <nav className="fixed top-0 left-0 h-screen w-20 bg-[#0F1014] backdrop-blur-md   shadow-lg z-50 flex flex-col items-center py-6">
+      {/* Netflix Brand */}
+     {/* <img className="h-10 w-auto -pt-5" src={Log} alt="Logo" />  */}
+
+      {/* Menu Icons */}
+      <ul className="flex-1 flex flex-col space-y-6 mt-35">
+        {items.map((it) => (
           <li key={it.to}>
             <NavLink
               to={it.to}
               className={({ isActive }) =>
-                `block px-3 py-2 rounded ${isActive ? 'text-red-500' : 'text-white'}`
+                `flex items-center justify-center w-12 h-12 rounded-xl transition-all duration-200
+                ${
+                  isActive
+                    ? "bg-red-600 text-white shadow-lg scale-110"
+                    : "text-gray-400 hover:text-white hover:bg-white/10"
+                }`
               }
             >
-              {it.label}
+              <it.icon className="w-6 h-6" />
             </NavLink>
           </li>
         ))}
-        {/* Logout Button */}
-        <li>
-          <button
-            onClick={handleLogout}
-            className="block w-full text-left px-3 py-2 rounded bg-red-600 hover:bg-red-700 mt-6"
-          >
-            Logout
-          </button>
-        </li>
       </ul>
+
+      {/* Logout */}
+      <button
+        onClick={handleLogout}
+        className="mt-auto flex items-center justify-center w-12 h-12 rounded-xl bg-red-600 hover:bg-red-700 text-white transition-all duration-200"
+      >
+        <LogOut className="w-6 h-6" />
+      </button>
     </nav>
   );
 }

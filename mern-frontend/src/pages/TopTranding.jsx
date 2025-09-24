@@ -183,7 +183,7 @@ export default function TopTrending({ addToWatchLater }) {
   ];
 
   return (
-    <div className="bg-black min-h-screen flex">
+    <div className="bg-black min-h-screen ml-20 flex a">
       {/* Sidebar */}
       <Sidebar />
 
@@ -197,7 +197,6 @@ export default function TopTrending({ addToWatchLater }) {
           {categories.map((cat) => (
             <div key={cat.key} className="mb-12">
               <h2 className="text-2xl font-semibold mb-4">{cat.label}</h2>
-
               {/* Carousel */}
               <div className="flex space-x-4 overflow-x-auto scrollbar-hide">
                 {movies
@@ -209,7 +208,7 @@ export default function TopTrending({ addToWatchLater }) {
                     >
                       {/* Poster */}
                       <img
-                        src={movie.img}
+                        src={movie.post}
                         alt={movie.title}
                         className="w-full h-full object-cover group-hover:opacity-0 transition duration-500"
                       />

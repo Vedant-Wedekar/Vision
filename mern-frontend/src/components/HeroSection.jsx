@@ -13,7 +13,7 @@ export default function HeroSection({ addToWatchLater }) {
   const navigate = useNavigate();
 
   return (
-    <div className=" w-[89%] ml-40 mt-14 h-[1000px]">
+    <div className=" w-[94%] ml-20 mt-14 h-[1000px]">
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation
