@@ -6,7 +6,10 @@ import Home from "./pages/Home";
 import WatchLater from "./pages/WatchLater";
 import Player from "./pages/Player";
 import TopTrending from "./pages/TopTranding";
+import Category from "./pages/Category";
 import { AuthContext } from "./context/AuthContext";
+// import { Music } from "lucide-react";
+import Music from "./pages/Music";
 
 function Protected({ children }) {
   const { token, loading } = useContext(AuthContext);
@@ -48,6 +51,10 @@ export default function App() {
     </Protected>
   }
 />
+
+<Route>
+  <Route path="/music" element={<Music />} />
+</Route>
       <Route
         path="/watchlater"
         element={
@@ -56,6 +63,14 @@ export default function App() {
           </Protected>
         }
       />
+      <Route
+  path="/category"
+  element={
+    <Protected>
+      <Category addToWatchLater={addToWatchLater} />
+    </Protected>
+  }
+/>
       <Route
         path="/player/:id"
         element={

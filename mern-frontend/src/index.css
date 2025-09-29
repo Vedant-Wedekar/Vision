@@ -13,7 +13,25 @@
   font-style: normal;
 }
 
-.loginBg{
-  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c95abc7a-8124-4630-bb7a-3b160bdc6de3/web/IN-en-20250915-TRIFECTA-perspective_d3d87aa7-58ed-4c6b-98dc-231ed05ba675_large.jpg);
-  
+.loginBg {
+  background-image: url("../src/assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.tit {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
