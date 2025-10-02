@@ -10,7 +10,7 @@ import {
   Clock,
   LogOut,
 } from "lucide-react";
-import Log from "../assets/logo.png";
+import Log from "../assets/logoo.png";
 export default function Sidebar() {
   const { logout } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -32,10 +32,10 @@ export default function Sidebar() {
   return (
     <nav className="fixed top-0 left-0 h-screen w-20 bg-[#0F1014] backdrop-blur-md   shadow-lg z-50 flex flex-col items-center py-6">
       {/* Netflix Brand */}
-     {/* <img className="h-10 w-auto -pt-5" src={Log} alt="Logo" />  */}
+     <img className="h-20 w-auto -mt-7  " src={Log} alt="Logo" /> 
 
       {/* Menu Icons */}
-      <ul className="flex-1 flex flex-col space-y-6 mt-35">
+      <ul className="flex-1 flex flex-col space-y-6 mt-25">
         {items.map((it) => (
           <li key={it.to}>
             <NavLink

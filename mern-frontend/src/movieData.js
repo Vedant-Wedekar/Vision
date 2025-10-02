@@ -215,10 +215,11 @@ export const movies = [
     description:
       "A high-budget action-thriller with massive set-pieces and patriotic themes, featuring conflicts both personal and political.",
     keywords: ["Action", "Thriller", "Patriotism"],
-    img: "https://example.com/war2.jpg",
+    img: "https://example.com/war2.jpg",post:"https://m.media-amazon.com/images/M/MV5BNjY5OTg4NTYtZjVkZS00YTZmLWIwNDEtM2Y0ODQyMzM2NTJiXkEyXkFqcGc@._V1_.jpg",
     video: Ban,
     cast: ["Tollywood Stars"]
   },
+  
   {
     id: 12,
     title: "Mahavatar Narsimha",    caste:"popular",
@@ -232,6 +233,7 @@ export const movies = [
     keywords: ["Fantasy", "Mythology", "Action"],
     img: "https://example.com/mahavatar-narsimha.jpg",
     video: Ban,
+    post:"https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/mahavatar-narsimha-et00429289-1753248294.jpg",
     cast: ["Telugu Ensemble"]
   },
 
@@ -280,6 +282,7 @@ export const movies = [
       "Spy thriller season where the protagonist must tackle national and international threats while balancing family life.",
     keywords: ["Thriller", "Action", "Drama"],
     img: "https://example.com/family-man-s3.jpg",
+    post:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoHtbb6R3VEKIC85TwULZo9jmx7pdfU7OMA&s ",
     video: Ban,
     cast: ["Manoj Bajpayee", "Sharib Hashmi"]
   },
@@ -296,6 +299,7 @@ export const movies = [
     keywords: ["Crime", "Drama", "Thriller"],
     img: "https://example.com/sacred-games.jpg",
     video: Pan,
+    post:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSSOqiE9Jge5mOx4iPQYETNX91u6pGR9M7mw&s",
     cast: ["Saif Ali Khan", "Nawazuddin Siddiqui"]
   },
   {
@@ -310,7 +314,7 @@ export const movies = [
       "Investigative thriller series centered around challenging new crime cases in the capital city with strong social themes.",
     keywords: ["Crime", "Mystery", "Social"],
     img: "https://example.com/delhi-crime-s4.jpg",
-    video: Ban,
+    video: Ban,post:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRjzmTltKzIU3WeoTuommRlRt8PgW0Xdd5Q&s",
     cast: ["Shefali Shah", "Rajesh Tailang"]
   },
   {
@@ -327,7 +331,7 @@ export const movies = [
       "A courtroom/historical drama dealing with the aftermath of the Jallianwala Bagh massacre, starring Akshay Kumar and others. Recognised among the high popular films on IMDb in 2025. :contentReference[oaicite:12]{index=12}",
     keywords: ["History", "Drama", "Courtroom", "Justice"],
     img: "",
-    post: "",
+    post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasERlJI8HkgGSKPhQ4vYyryygwVLfxf49_Q&s",
     video: null,
     cast: ["Akshay Kumar", "R. Madhavan", "Ananya Panday"]
   },{
@@ -342,7 +346,7 @@ export const movies = [
       "Sequel to Raid (2018), a crime drama where an IT officer (Amay Patnaik) takes on powerful businessmen involved in back-money and corruption. Among the top popular films in 2025. :contentReference[oaicite:10]{index=10}",
     keywords: ["Crime", "Drama", "Sequel", "Thriller"],
     img: "",
-    post: "",
+    post: "https://stat4.bollywoodhungama.in/wp-content/uploads/2021/12/Raid2-1.jpg",
     video: null,
     cast: ["Ajay Devgn", "Vaani Kapoor"] 
   },
@@ -428,7 +432,8 @@ export const movies = [
     post: "https://some-poster-url-vikram.jpg",
     video: null,
     cast: ["Kamal Haasan", "Fahadh Faasil", "Vijay Sethupathi"]  // main cast
-  }, {
+  },
+   {
     id: 202,
     title: "Mirzapur",
     year: 2018,caste:"shows",
@@ -472,7 +477,7 @@ export const movies = [
       "A middle-class man leads a double life — as a family man and a secret agent — balancing high-stakes national security threats with everyday domestic challenges.",
     keywords: ["Action", "Drama", "Spy", "Family"],
     img: "https://some-image-url-family-man.jpg",
-    post: "https://some-poster-url-family-man.jpg",
+    post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoHtbb6R3VEKIC85TwULZo9jmx7pdfU7OMA&s",
     video: null,
     cast: ["Manoj Bajpayee", "Priyamani", "Sharib Hashmi"]
   },
@@ -552,7 +557,7 @@ export const movies = [
     "The third installment in the popular horror-comedy franchise directed by Amar Kaushik. Expected to continue the Maddock horror-comedy universe after *Stree* and *Stree 2*. Scheduled for 2026.",
   keywords: ["Horror", "Comedy", "Supernatural", "Franchise"],
   img: "",
-  post: "",
+  post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_r2mGhzsD85Ba1Iv1bvM4h-hC0fVbDo9vg&s",
   video: null,
   cast: ["Rajkummar Rao", "Shraddha Kapoor", "Pankaj Tripathi", "Aparshakti Khurana", "Abhishek Banerjee"]
 },

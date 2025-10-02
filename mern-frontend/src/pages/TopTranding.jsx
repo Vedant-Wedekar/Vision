@@ -206,12 +206,16 @@ export default function TopTrending({ addToWatchLater }) {
                       key={movie.id}
                       className="relative group min-w-[220px] max-w-[220px] h-[330px] rounded-lg overflow-hidden bg-gray-900 transform transition-all duration-500 hover:scale-110 hover:rounded-2xl"
                     >
+
+
                       {/* Poster */}
                       <img
                         src={movie.post}
                         alt={movie.title}
                         className="w-full h-full object-cover group-hover:opacity-0 transition duration-500"
                       />
+
+                      
 
                       {/* Hover Overlay → transforms into trailer card */}
                       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center bg-black/90 p-3 rounded-2xl">
