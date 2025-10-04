@@ -62,7 +62,7 @@ export default function Category({ addToWatchLater }) {
       <Header />
       <Sidebar />
 
-      <main className="ml-6 px-6 mt-20 relative z-10">
+      <main className="ml-6 px-6 mt-15 relative z-10">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-2xl font-bold mb-6 text-white">
             Categories 🎬
