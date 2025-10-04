@@ -36,9 +36,6 @@ export const movies = [
     cast: ["Adrian Molina", "Yonas Kibreab", "America Ferrera"]
   },
 
-  // --- NEW ADDED DATA ---
-
-  // Top Trending Hollywood Movies
   {
     id: 3,
     title: "Lilo & Stitch",
