@@ -12,6 +12,8 @@ import {
   ArrowLeft,
 } from "lucide-react";
 
+
+
 export default function Player() {
   const { id } = useParams();
   const navigate = useNavigate();
