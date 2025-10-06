@@ -172,6 +172,7 @@ import { movies } from "../movieData";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 
 export default function TopTrending({ addToWatchLater }) {
   const categories = [
@@ -252,6 +253,7 @@ export default function TopTrending({ addToWatchLater }) {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
