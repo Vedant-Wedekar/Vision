@@ -11,6 +11,8 @@ export const movies = [
     category: "hollywood",  
     length: "1h 37m",
     languages: "4 Languages",
+     category: "english",
+
     description:
       "Elio, a space fanatic, lands in a cosmic misadventure when he is beamed up to an interplanetary organization and mistaken for Earth’s leader.",
     keywords: ["Comedy", "Adventure", "Science Fiction", "Family"],
@@ -93,6 +95,8 @@ export const movies = [
     year: 2025,
     rating: "PG-13",
     category: "hollywood",
+     category: "english",
+
     length: "2h 10m",
     languages: "English",
     description:
@@ -125,6 +129,8 @@ export const movies = [
     year: 2025,
     rating: "U/A",
     category: "bollywood",
+    
+
     length: "2h 30m",
     languages: "Hindi",
     description:
@@ -158,6 +164,8 @@ export const movies = [
     year: 2025,category: "hindi",
     rating: "U/A",
     category: "bollywood",
+     category: "hindi",
+
     length: "2h 05m",
     languages: "Hindi",
     description:
@@ -256,6 +264,8 @@ export const movies = [
     "year": 2022,
     "rating": "U/A",
     "category": "tollywood",
+     category: "hindi",
+
     "length": "3h 18m",
     "languages": "Telugu, Hindi, Tamil, Malayalam, Kannada (dubbed)",
     "description": "A fictionalized epic about two Indian revolutionaries and their friendship, framed by spectacular action and musical set-pieces.",
@@ -288,6 +298,8 @@ export const movies = [
     "year": 2024,
     "rating": "A",
     "category": "tollywood",
+     category: "hindi",
+
     "length": "2h 55m",
     "languages": "Telugu (also dubbed in Hindi, Tamil, Malayalam, Kannada)",
     "description": "Sequel continuing the saga of Pushpa Raj — expands the smuggling world and heightens the protagonist's clash with powerful enemies.",
@@ -466,6 +478,8 @@ export const movies = [
     caste:"top-rated",
     rating: "8.0/10",
     category: "bollywood",
+     category: "hindi",
+
     length: "",
     languages: "Hindi",
     description:
@@ -500,6 +514,8 @@ export const movies = [
     year: 2025,
     rating: "8.7/10",  // approximate / IMDb etc  
     category: "anime / fantasy",
+     category: "hindi",
+
     length: "2h 35m",  // 155 min = 2h35m :contentReference[oaicite:0]{index=0}  
     languages: "Japanese (with dubs/subs)", 
     description:
@@ -518,6 +534,8 @@ export const movies = [
     category: "tv / fantasy",
     length: "8 Seasons (73 episodes)",  
     languages: "English",
+     category: "english",
+
     description:
       "Nine noble families battle for control over the lands of Westeros, while the long-dormant threat of the White Walkers rises again. :contentReference[oaicite:5]{index=5}",
     keywords: ["Fantasy", "Drama", "Political", "Epic"],
