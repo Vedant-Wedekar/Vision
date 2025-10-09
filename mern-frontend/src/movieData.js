@@ -12,9 +12,7 @@ export const movies = [
     length: "1h 37m",
     languages: "4 Languages",
      category: "english",
-
-    description:
-      "Elio, a space fanatic, lands in a cosmic misadventure when he is beamed up to an interplanetary organization and mistaken for Earth’s leader.",
+    description:"Elio, a space fanatic, lands in a cosmic misadventure when he is beamed up to an interplanetary organization and mistaken for Earth’s leader.",
     keywords: ["Comedy", "Adventure", "Science Fiction", "Family"],
     img: "https://img10.hotstar.com/image/upload/f_auto,q_auto/sources/r1/cms/prod/7541/1756877597541-i",
     post:"https://i0.wp.com/pixarpost.com/wp-content/uploads/2024/11/ELIO_Teaser_2nd_Intro_1s_v4.0_A_Mech11_FS.jpg?resize=1080%2C1600&ssl=1",
@@ -49,7 +47,7 @@ export const movies = [
     description:
       "A live-action/CGI remake of Disney’s beloved classic where a spirited Hawaiian girl forms an unexpected bond with an alien experiment, Stitch.",
     keywords: ["Family", "Adventure", "Comedy", "Remake"],
-    img: "https://example.com/lilo-stitch.jpg",
+    img: "https://i.ytimg.com/vi/euYGJkMoPTM/maxresdefault.jpg",
     video: Ban,
     post:"https://upload.wikimedia.org/wikipedia/en/5/56/Lilo_%26_Stitch_2025_Theatrical_Poster.jpg",
     cast: ["Maia Agudong", "Chris Sanders", "Sydney Elizbeth Agudong"]
@@ -67,7 +65,7 @@ export const movies = [
       description:
         "Ethan Hunt faces his most dangerous mission yet, confronting shadows from his past as the final reckoning approaches.",
       keywords: ["Action", "Thriller", "Spy", "Adventure"],
-      img: "https://example.com/mi-final-reckoning.jpg",
+      img: "https://weliveentertainment.com/wp-content/uploads/2025/05/mission-impossible-final-reckoning-banner.jpg",
       video: Ban,
       cast: ["Tom Cruise", "Hayley Atwell", "Simon Pegg"] ,
       post:" https://i.scdn.co/image/ab67616d0000b273633c6c0934eccaed2a9359be ",
