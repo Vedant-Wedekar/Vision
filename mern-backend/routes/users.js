@@ -21,7 +21,8 @@ router.post('/watchlater', auth, async (req, res) => {
     const user = await User.findById(req.user.id);
     if (!user) return res.status(404).json({ msg: 'User not found' });
 
-    if (user.watchLater.some(m => m.movieId === movieId)) return res.status(400).json({ msg: 'Already in watch later' });
+    if (user.watchLater.some(m => m.movieId === movieId))
+      return res.status(400).json({ msg: 'Already in watch later' });
 
     user.watchLater.unshift({ movieId, title, poster });
     await user.save();
@@ -44,6 +45,20 @@ router.delete('/watchlater/:movieId', auth, async (req, res) => {
     res.status(500).send('Server error');
   }
 });
+router.put('/subscribe', auth, async (req, res) => {
+  try {
+    console.log("Auth user:", req.user); // should print { id: ... }
+    const user = await User.findById(req.user.id);
+    if (!user) return res.status(404).json({ msg: 'User not found' });
+
+    user.paidSubscriber = true;
+    await user.save();
+
+    res.json({ msg: 'Subscription activated successfully', user });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server error');
+  }
+});
 
 module.exports = router;
-  

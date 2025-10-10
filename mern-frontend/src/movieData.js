@@ -18,7 +18,8 @@ export const movies = [
     post:"https://i0.wp.com/pixarpost.com/wp-content/uploads/2024/11/ELIO_Teaser_2nd_Intro_1s_v4.0_A_Mech11_FS.jpg?resize=1080%2C1600&ssl=1",
     video: Ban,
     cast: ["Adrian Molina", "Yonas Kibreab", "America Ferrera"]
-  },
+  }
+,
   {
     post:"https://m.media-amazon.com/images/M/MV5BNWJmNTU1NDgtYzc4MC00ODU2LWFjNzYtYjFhNjRkNTQwZmQyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     id: 2,caste:"shows",
@@ -26,6 +27,7 @@ export const movies = [
     year: 2025,
     rating: "U/A 18+",
     category: "bollywood", 
+    
     length: "1h 37m",
     languages: "4 Languages",
     description:
@@ -293,6 +295,8 @@ export const movies = [
     "id": 4,
     "caste": "shows",
     "title": "Pushpa 2: The Rule",
+    "category": "tollywood",
+
     "year": 2024,
     "rating": "A",
     "category": "tollywood",
