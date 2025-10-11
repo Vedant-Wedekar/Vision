@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const WatchLaterSchema = new mongoose.Schema({
-  movieId: { type: String },
-  title: { type: String },
-  poster: { type: String },
+  movieId: { type: String, required: true },
+  title: { type: String, required: true },
+  poster: { type: String, default: "" },
   addedAt: { type: Date, default: Date.now }
 }, { _id: false });
 

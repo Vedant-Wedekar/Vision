@@ -1,6 +1,7 @@
 import Ban from './Video/banner.mp4'
 import Pan from './Video/pan.mp4'
-
+import Loo from './Video/LOO.mp4'
+import MMM from './Video/MMM.mp4'
 export const movies = [
   // existing:
   {
@@ -27,21 +28,21 @@ export const movies = [
     year: 2025,
     rating: "U/A 18+",
     category: "bollywood", 
-    
-    length: "1h 37m",
+     length: "1h Episodes",
+  languages: "Hindi, Tamil, Telugu, Kannada",
+  description: "Bigg Boss brings together diverse contestants under one roof, where drama, tasks, and eliminations test their patience, strategy, and emotions. Hosted by Salman Khan, it’s India’s most thrilling and controversial reality show.",
+  keywords: ["Reality", "Drama", "Competition", "Entertainment"],
     languages: "4 Languages",
-    description:
-      "Elio, a space fanatic, lands in a cosmic misadventure when he is beamed up to an interplanetary organization and mistaken for Earth’s leader.",
-    keywords: ["Comedy", "Adventure", "Science Fiction", "Family"],
     img: "https://img10.hotstar.com/image/upload/f_auto,q_auto/sources/r1/cms/prod/3084/1759042823084-i",
     video: Pan,
-    cast: ["Adrian Molina", "Yonas Kibreab", "America Ferrera"]
+    cast: ["Salman Khan", "Contestants 2025", "Bigg Boss Voice"]
   },
 
   {
     id: 3,
     title: "Lilo & Stitch",
     year: 2025,
+      category: "english",
     rating: "PG-13",
     category: "hollywood",
     length: "1h 48m",
@@ -50,7 +51,7 @@ export const movies = [
       "A live-action/CGI remake of Disney’s beloved classic where a spirited Hawaiian girl forms an unexpected bond with an alien experiment, Stitch.",
     keywords: ["Family", "Adventure", "Comedy", "Remake"],
     img: "https://i.ytimg.com/vi/euYGJkMoPTM/maxresdefault.jpg",
-    video: Ban,
+    video: Loo,
     post:"https://upload.wikimedia.org/wikipedia/en/5/56/Lilo_%26_Stitch_2025_Theatrical_Poster.jpg",
     cast: ["Maia Agudong", "Chris Sanders", "Sydney Elizbeth Agudong"]
   },
@@ -61,6 +62,7 @@ export const movies = [
       year: 2025,
       rating: "PG-13",
       category: "hollywood",
+        category: "english",
       caste:"popular",
       length: "2h 25m",
       languages: "English",
@@ -68,17 +70,18 @@ export const movies = [
         "Ethan Hunt faces his most dangerous mission yet, confronting shadows from his past as the final reckoning approaches.",
       keywords: ["Action", "Thriller", "Spy", "Adventure"],
       img: "https://weliveentertainment.com/wp-content/uploads/2025/05/mission-impossible-final-reckoning-banner.jpg",
-      video: Ban,
+      video: MMM,
       cast: ["Tom Cruise", "Hayley Atwell", "Simon Pegg"] ,
       post:" https://i.scdn.co/image/ab67616d0000b273633c6c0934eccaed2a9359be ",
     },
   { 
-    post:"https://www.planet9productions.in/wp-content/uploads/2025/07/images-2025-07-04t154417.475-Bd3Iho.jpg",
+    post:"https://dx35vtwkllhj9.cloudfront.net/universalstudios/jurassic-world-rebirth/images/regions/us/updates1/onesheet.jpg",
     id: 5,
     title: "Jurassic World: Rebirth",
     year: 2025,
     rating: "PG-13",
     category: "hollywood",
+      category: "english",
     length: "2h 13m",
     languages: "English",
     description:
@@ -516,7 +519,7 @@ export const movies = [
     year: 2025,
     rating: "8.7/10",  // approximate / IMDb etc  
     category: "anime / fantasy",
-     category: "hindi",
+     category: "hindi",  category: "english",
 
     length: "2h 35m",  // 155 min = 2h35m :contentReference[oaicite:0]{index=0}  
     languages: "Japanese (with dubs/subs)", 

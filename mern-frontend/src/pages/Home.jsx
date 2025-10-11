@@ -1,28 +1,14 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
-import api from "../api/axios";
 import { AuthContext } from "../context/AuthContext";
 import HeroSection from "../components/HeroSection";
 import Footer from "../components/Footer";
-import { movies } from "../movieData"; // Import your movieData.js
+import { movies } from "../movieData";
 
-export default function Home() {
+export default function Home({ addToWatchLater }) {
   const { user } = useContext(AuthContext);
-  const [watchLaterLocal, setWatchLaterLocal] = useState(
-    user?.watchLater || []
-  );
-
-  const addToWatchLater = async (movie) => {
-    try {
-      const res = await api.post("/api/users/watchlater", movie);
-      setWatchLaterLocal(res.data);
-      alert("Added to Watch Later");
-    } catch (err) {
-      alert(err.response?.data?.msg || "Failed to add");
-    }
-  };
 
   const upcoming = movies.filter((m) => m.caste === "upcoming");
   const popular = movies.filter((m) => m.caste === "popular");
@@ -57,7 +43,7 @@ export default function Home() {
             to={`/player/${movie.id}`}
             className="px-3 py-1 bg-red-600 rounded text-sm hover:bg-red-700 transition"
           >
-            ▶ Watch Now
+            Watch Now
           </Link>
           <button
             onClick={() => addToWatchLater(movie)}
@@ -74,15 +60,15 @@ export default function Home() {
     <div className="bg-[#0F1014]">
       <Header />
       <Sidebar />
-
       <HeroSection addToWatchLater={addToWatchLater} />
 
-     <main className="ml-50 mt-[95vh] pt-20  px-6 relative z-10">
-  <div className="max-w-7xl ">
-          <h1 className="text-2xl font-bold mb-6  text-white">
+      <main className="ml-50 mt-[95vh] pt-20 px-6 relative z-10">
+        <div className="max-w-7xl">
+          <h1 className="text-2xl font-bold mb-6 text-white">
             Welcome{user ? `, ${user.name}` : ""}
           </h1>
 
+          {/* Movie Sections */}
           <section className="mb-10">
             <h2 className="text-xl mb-3 text-white">🎬 Upcoming Movies</h2>
             <div className="flex gap-5 overflow-x-auto scrollbar-hide">
