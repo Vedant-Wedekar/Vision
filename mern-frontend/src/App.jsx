@@ -11,7 +11,7 @@ import Profile from "./pages/Profile";
 import SubscribePage from "./pages/SubscribePage";
 import Music from "./pages/Music";
 import { AuthContext } from "./context/AuthContext";
-import api from "./api/axios"; // ✅ your Axios instance
+import api from "./api/axios";
 
 function Protected({ children }) {
   const { token, loading } = useContext(AuthContext);
@@ -23,60 +23,52 @@ export default function App() {
   const { token } = useContext(AuthContext);
   const [watchLater, setWatchLater] = useState([]);
 
-  // ✅ Load user's Watch Later from backend (not localStorage)
+  // Load watch later from backend
   useEffect(() => {
-    if (!token) return;
     const fetchWatchLater = async () => {
+      if (!token) return;
       try {
-        const res = await api.get("/users/me", {
+        const res = await api.get("/api/users/watchlater", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setWatchLater(res.data.watchLater || []);
       } catch (err) {
-        console.error("Failed to load watch later:", err);
+        console.error("Failed to load watch later:", err.response?.data || err);
       }
     };
     fetchWatchLater();
   }, [token]);
 
-  // ✅ Add movie to Watch Later via backend
+  // Add to watch later (backend)
   const addToWatchLater = async (movie) => {
-    if (!token) {
-      alert("Please login first!");
-      return;
-    }
-
+    if (!token) return alert("Please login to save movies.");
     try {
       const res = await api.post(
-        "/users/watchlater",
+        "/api/users/watchlater",
         {
           movieId: movie.id,
           title: movie.title,
-          poster: movie.img,
+          poster: movie.post || movie.img,
         },
-        {
-          headers: { Authorization: `Bearer ${token}` },
-        }
+        { headers: { Authorization: `Bearer ${token}` } }
       );
       setWatchLater(res.data);
-      alert("Added to Watch Later ✅");
+      alert("Movie added to Watch Later ✅");
     } catch (err) {
-      console.error("Add failed:", err);
-      alert("Failed to add movie. Try again.");
+      console.error("Failed to add movie:", err.response?.data || err);
+      alert(err.response?.data?.msg || "Failed to add movie. Try again.");
     }
   };
 
-  // ✅ Remove movie from Watch Later
   const removeFromWatchLater = async (movieId) => {
     if (!token) return;
-
     try {
-      const res = await api.delete(`/users/watchlater/${movieId}`, {
+      const res = await api.delete(`/api/users/watchlater/${movieId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setWatchLater(res.data);
     } catch (err) {
-      console.error("Failed to remove:", err);
+      console.error(err);
     }
   };
 
@@ -84,7 +76,6 @@ export default function App() {
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-
       <Route
         path="/"
         element={
@@ -93,7 +84,6 @@ export default function App() {
           </Protected>
         }
       />
-
       <Route
         path="/top"
         element={
@@ -102,9 +92,6 @@ export default function App() {
           </Protected>
         }
       />
-
-      <Route path="/music" element={<Music />} />
-
       <Route
         path="/watchlater"
         element={
@@ -116,7 +103,6 @@ export default function App() {
           </Protected>
         }
       />
-
       <Route
         path="/category"
         element={
@@ -125,7 +111,6 @@ export default function App() {
           </Protected>
         }
       />
-
       <Route
         path="/player/:id"
         element={
@@ -134,7 +119,6 @@ export default function App() {
           </Protected>
         }
       />
-
       <Route
         path="/profile"
         element={
@@ -143,8 +127,10 @@ export default function App() {
           </Protected>
         }
       />
-
       <Route path="/subscribe" element={<SubscribePage />} />
+      <Route path="/music" element={<Music />} />
     </Routes>
   );
 }
+
+

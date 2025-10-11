@@ -14,6 +14,19 @@ router.get("/me", auth, async (req, res) => {
   }
 });
 
+// GET /api/users/watchlater - get all saved movies
+router.get("/watchlater", auth, async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id);
+    if (!user) return res.status(404).json({ msg: "User not found" });
+
+    res.json({ watchLater: user.watchLater || [] });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server error");
+  }
+});
+
 // POST /api/users/watchlater  - add to watch later
 router.post("/watchlater", auth, async (req, res) => {
   const { movieId, title, poster } = req.body;
