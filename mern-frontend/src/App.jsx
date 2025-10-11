@@ -7,6 +7,8 @@ import WatchLater from "./pages/WatchLater";
 import Player from "./pages/Player";
 import TopTrending from "./pages/TopTranding";
 import Category from "./pages/Category";
+import Profile from "./pages/Profile";
+import SubscribePage from './pages/SubscribePage';
 import { AuthContext } from "./context/AuthContext";
 // import { Music } from "lucide-react";
 import Music from "./pages/Music";
@@ -18,7 +20,6 @@ function Protected({ children }) {
 }
 
 export default function App() {
-  // Watch Later state (global for this session)
   const [watchLater, setWatchLater] = useState([]);
 
   const addToWatchLater = (movie) => {
@@ -29,11 +30,9 @@ export default function App() {
 
   return (
     <Routes>
-      {/* Auth Routes */}
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
 
-      {/* Protected Routes */}
       <Route
         path="/"
         element={
@@ -79,7 +78,21 @@ export default function App() {
           </Protected>
         }
       />
+
+
+      <Route
+      path="/profile"
+      element={
+       <Protected>
+      <Profile />
+    </Protected>
+  }
+/>
+
+ <Route path="/subscribe" element={<SubscribePage />} />
+
     </Routes>
+    
 
   );
 }
