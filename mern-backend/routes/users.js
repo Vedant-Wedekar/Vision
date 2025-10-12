@@ -109,9 +109,6 @@ router.delete("/watchlater/:movieId", auth, async (req, res) => {
 });
 
 
-// ===============================
-// PUT /api/users/subscribe - mark user subscribed
-// ===============================
 router.put("/subscribe", auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id);
@@ -127,8 +124,4 @@ router.put("/subscribe", auth, async (req, res) => {
   }
 });
 
-
-// ===============================
-// Export
-// ===============================
 module.exports = router;
