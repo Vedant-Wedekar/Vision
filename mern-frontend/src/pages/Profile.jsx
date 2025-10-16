@@ -19,13 +19,13 @@ export default function Profile() {
     ? new Date(user.createdAt).toLocaleDateString()
     : "March 2024";
 
-  return (
+  return ( <div className="">
     <div className="min-h-screen flex flex-col md:flex-row bg-[#0F1014] text-white relative overflow-hidden">
       {/* Sidebar */}
       <Sidebar />
 
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#ff007f33] via-[#3a0ca333] to-[#0077ff33] blur-3xl opacity-60"></div>
+      <div className="absolute inset-0  blur-3xl opacity-60"></div>
 
       {/* Main Section */}
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-10 relative z-10">
@@ -34,9 +34,8 @@ export default function Profile() {
         <div className="relative bg-[#151820]/80 backdrop-blur-2xl p-10 rounded-3xl shadow-2xl border border-[#2a2d35] w-[400px] sm:w-[450px] text-center transition-transform transform hover:scale-[1.02] duration-300">
           {/* Profile Image */}
           <div className="mb-6 relative">
-            {/* <div className="absolute inset-0 blur-2xl bg-gradient-to-r from-[#3B82F6] to-[#9333EA] rounded-full opacity-30"></div> */}
             <img
-              src={`https://ui-avatars.com/api/?name=${user?.username || "User"}&background=3b82f6&color=fff&bold=true`}
+              src={`https://ui-avatars.com/api/?name=${user?.name || "User"}&background=3b82f6&color=fff&bold=true`}
               alt="Profile"
               className="w-28 h-28 rounded-full mx-auto border-4 border-[#3B82F6] shadow-lg relative z-10"
             />
@@ -44,11 +43,9 @@ export default function Profile() {
 
           {/* Name */}
           <h1 className="text-3xl font-bold mb-2 tracking-wide">
-            {user?.username || "User Name"}
+            {user?.name || "User Name"}
           </h1>
-          {/* <p className="text-gray-400 text-sm mb-6">
-            Full Stack Developer | Passionate Coder 💻
-          </p> */}
+      
 
           {/* Details Section */}
           {user ? (
@@ -57,7 +54,7 @@ export default function Profile() {
                 <User className="text-blue-400" size={20} />
                 <span className="text-gray-300">
                   <strong className="text-white">Username:</strong>{" "}
-                  {user.username || "N/A"}
+                  {user.name || "N/A"}
                 </span>
               </div>
 
@@ -96,7 +93,8 @@ export default function Profile() {
         </div>
 
        
-      </div> <Footer />
-    </div>
+      </div> 
+    </div><Footer />
+   </div>
   );
 }

@@ -18,8 +18,9 @@ export default function Home({ addToWatchLater }) {
   const MovieCard = ({ movie }) => (
     <div
       key={movie.id}
-      className="relative group min-w-[220px] max-w-[220px] h-[330px] rounded-lg overflow-hidden bg-gray-900 transform transition-all duration-500 hover:scale-110 hover:rounded-2xl"
+      className="relative group min-w-[220px] max-w-[20px] min-h-[330px] max-h-[330px] rounded-lg  bg-gray-900 transform transition-all duration-500 hover:scale-150 hover:flex hover:rounded-4xl"
     >
+      {/* overflow-hidden */}
       <img
         src={movie.post}
         alt={movie.title}
@@ -49,6 +50,7 @@ export default function Home({ addToWatchLater }) {
             onClick={() => addToWatchLater(movie)}
             className="px-3 py-1 bg-gray-700 rounded text-sm hover:bg-gray-600 transition"
           >
+
             + Watch Later
           </button>
         </div>
@@ -71,7 +73,7 @@ export default function Home({ addToWatchLater }) {
           {/* Movie Sections */}
           <section className="mb-10">
             <h2 className="text-xl mb-3 text-white">🎬 Upcoming Movies</h2>
-            <div className="flex gap-5 overflow-x-auto scrollbar-hide">
+            <div className="flex gap-5 scrollbar-hide">
               {upcoming.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />
               ))}
@@ -80,7 +82,7 @@ export default function Home({ addToWatchLater }) {
 
           <section className="mb-10">
             <h2 className="text-xl mb-3 text-white">⭐ Popular Movies</h2>
-            <div className="flex gap-5 overflow-x-auto scrollbar-hide">
+            <div className="flex gap-5  scrollbar-hide">
               {popular.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />
               ))}
@@ -89,7 +91,7 @@ export default function Home({ addToWatchLater }) {
 
           <section className="mb-10">
             <h2 className="text-xl mb-3 text-white">📺 Shows</h2>
-            <div className="flex gap-5 overflow-x-auto scrollbar-hide">
+            <div className="flex gap-5  scrollbar-hide">
               {shows.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />
               ))}
@@ -98,12 +100,13 @@ export default function Home({ addToWatchLater }) {
 
           <section className="mb-10">
             <h2 className="text-xl mb-3 text-white">🏆 Top Rated IMDb</h2>
-            <div className="flex gap-5 overflow-x-auto scrollbar-hide">
+            <div className="flex gap-5  scrollbar-hide">
               {topRated.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />
               ))}
             </div>
           </section>
+          
         </div>
       </main>
 
