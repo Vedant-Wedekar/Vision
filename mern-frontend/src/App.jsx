@@ -23,7 +23,6 @@ export default function App() {
   const { token } = useContext(AuthContext);
   const [watchLater, setWatchLater] = useState([]);
 
-  // Load watch later from backend
   useEffect(() => {
     const fetchWatchLater = async () => {
       if (!token) return;

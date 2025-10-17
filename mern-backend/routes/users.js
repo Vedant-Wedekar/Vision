@@ -4,9 +4,7 @@ const auth = require("../middleware/auth");
 const User = require("../models/User");
 
 
-// ===============================
-// GET /api/users/me - get profile (protected)
-// ===============================
+
 router.get("/me", auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");
@@ -18,9 +16,7 @@ router.get("/me", auth, async (req, res) => {
 });
 
 
-// ===============================
-// GET /api/users/watchlater - get all saved movies
-// ===============================
+
 router.get("/watchlater", auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id);
@@ -40,9 +36,7 @@ router.get("/watchlater", auth, async (req, res) => {
 });
 
 
-// ===============================
-// POST /api/users/watchlater - add to watch later
-// ===============================
+
 router.post("/watchlater", auth, async (req, res) => {
   try {
     console.log("📩 Incoming body:", req.body);
@@ -57,12 +51,10 @@ router.post("/watchlater", auth, async (req, res) => {
     const user = await User.findById(req.user.id);
     if (!user) return res.status(404).json({ msg: "User not found" });
 
-    // ✅ Clean invalid entries first
     user.watchLater = (user.watchLater || []).filter(
       (m) => m.movieId && m.title
     );
 
-    // ✅ Prevent duplicates
     const exists = user.watchLater.some(
       (m) => String(m.movieId) === String(movieId)
     );
@@ -70,7 +62,6 @@ router.post("/watchlater", auth, async (req, res) => {
       return res.status(400).json({ msg: "Already in watch later" });
     }
 
-    // ✅ Add valid new entry
     user.watchLater.unshift({
       movieId: String(movieId),
       title,
@@ -88,9 +79,7 @@ router.post("/watchlater", auth, async (req, res) => {
 });
 
 
-// ===============================
-// DELETE /api/users/watchlater/:movieId - remove (protected)
-// ===============================
+
 router.delete("/watchlater/:movieId", auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id);

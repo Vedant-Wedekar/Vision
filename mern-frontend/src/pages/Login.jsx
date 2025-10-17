@@ -28,13 +28,10 @@ export default function Login() {
                 {/* <div className="a text-white font-extrabold flex text-3xl" >Vision </div> */}
                 {/* <div className="a text-white ml-2 font-extrabold flex text-3xl" > Sphere</div> */}
       </div>
-      {/* Background Image */}
       <div className="absolute inset-0 bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/1b1a0c12-6bbf-4f8a-9f4c-7c8c6a4b6e36/e7a9f4a9-37d1-45f0-b4b6-d49a9f2d5a42/IN-en-20230918-popsignuptwoweeks-perspective_alpha_website_large.jpg')] bg-cover bg-center"></div>
 
-      {/* Gradient Overlay */}
       <div className="absolute inset-0 "></div>
 
-      {/* Glassmorphism Login Box */}
      <motion.form
   onSubmit={submit}
   initial={{ opacity: 0, y: 50, scale: 0.95 }}

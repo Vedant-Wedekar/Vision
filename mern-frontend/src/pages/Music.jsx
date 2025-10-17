@@ -15,7 +15,6 @@ const Music = () => {
         <Header />
             <Sideebar />
       <div className="h-[90%] w-[100% ] flex ml-20">
-        {/* <Sidebar/> */}
         <Display/>
       </div>
       <Player className="" />

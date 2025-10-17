@@ -63,7 +63,6 @@ export default function Player() {
           className="w-full h-full object-cover"
         />
 
-        {/* Back Button (top-left) */}
         <button
           onClick={() => navigate(-1)}
           className="absolute top-4 left-4 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition"
@@ -71,9 +70,7 @@ export default function Player() {
           <ArrowLeft size={22} />
         </button>
 
-        {/* Custom Controls */}
         <div className="absolute bottom-6 left-0 right-0 flex items-center justify-between px-8 text-white">
-          {/* Left Controls */}
           <div className="flex items-center gap-4">
             <button
               onClick={togglePlay}
@@ -113,14 +110,12 @@ export default function Player() {
         </div>
       </div>
 
-      {/* Movie Info Section */}
       <div className="p-8 text-white max-w-6xl mx-auto">
         <h1 className="text-5xl font-extrabold">{movie.title}</h1>
         <p className="mt-4 text-gray-300 text-lg leading-relaxed">
           {movie.description}
         </p>
 
-        {/* Cast Section */}
         <h3 className="mt-8 font-semibold text-2xl">Cast</h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-4">
           {movie.cast.map((actor, i) => (
@@ -128,7 +123,6 @@ export default function Player() {
               key={i}
               className="flex flex-col items-center bg-white/10 p-4 rounded-xl hover:bg-white/20 transition"
             >
-              {/* actor.image should be in your movieData */}
               <img
                 src={actor.image}
                 alt={actor.name}

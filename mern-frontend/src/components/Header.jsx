@@ -50,7 +50,6 @@ export default function Header() {
               {user?.paidSubscriber ? 'Subscribed ✅' : 'Subscribe'}
             </button>
 
-            {/* ✅ Avatar + Name */}
             <div className="flex items-center space-x-2">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMks8CZ8Igv-OE_AYRST5qzyTZDjk0ci5oh4AdTu9KySTNtN2qxuZ2mp9Np2TKUCEbvwY&usqp=CAU"

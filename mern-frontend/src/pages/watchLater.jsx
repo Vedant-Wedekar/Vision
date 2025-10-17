@@ -74,12 +74,10 @@ export default function WatchLater() {
       {/* Header */}
       <Header />
 
-      {/* Main Layout: Sidebar + Content */}
       <div className="flex flex-1">
         {/* Sidebar */}
         <Sidebar />
 
-        {/* Movie List Content */}
         <div className="flex-1 px-6 md:px-12 py-10 mt-20 ml-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-10 tracking-wide flex items-center gap-2">
             🎬 Watch Later
@@ -97,7 +95,6 @@ export default function WatchLater() {
                   transition={{ duration: 0.35 }}
                   className="relative group overflow-hidden rounded-2xl cursor-pointer bg-[#1A1C25]/50 backdrop-blur-lg border border-white/5 hover:border-purple-500/40 shadow-[0_5px_15px_rgba(0,0,0,0.4)] hover:shadow-[0_0_25px_rgba(168,85,247,0.3)] transition-all duration-500 ease-out transform hover:-translate-y-2"
                 >
-                  {/* Poster */}
                   <img
                     src={m.poster || m.img || "https://via.placeholder.com/300x400"}
                     alt={m.title}
@@ -105,25 +102,20 @@ export default function WatchLater() {
                     onClick={() => navigate(`/player/${m.movieId}`)}
                   />
 
-                  {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500"></div>
 
-                  {/* Glow border */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-purple-600/20 via-transparent to-transparent"></div>
 
-                  {/* Title */}
                   <div className="absolute bottom-3 left-3 right-3">
                     <h3 className="text-lg font-semibold truncate drop-shadow-[0_1px_3px_rgba(0,0,0,0.7)]">
                       {m.title}
                     </h3>
                   </div>
 
-                  {/* Rating */}
                   <div className="absolute top-2 left-2 bg-black/70 px-2 py-1 rounded-md text-xs text-gray-300 opacity-0 group-hover:opacity-100 transition duration-300">
                     ★ {m.rating || "N/A"}
                   </div>
 
-                  {/* Hover Buttons */}
                   <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-400">
                     <button
                       onClick={() => navigate(`/player/${m.movieId}`)}

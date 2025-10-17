@@ -17,14 +17,12 @@ export default function SearchBar() {
       return;
     }
 
-    // Search by title (case-insensitive)
     const filtered = movies.filter((movie) =>
       movie.title.toLowerCase().includes(value.toLowerCase())
     );
     setResults(filtered);
   };
 
-  // On click movie
   const handleSelectMovie = (id) => {
     setQuery("");
     setResults([]);
@@ -33,7 +31,6 @@ export default function SearchBar() {
 
   return (
     <div className="ml-8 flex-1 max-w-md relative">
-      {/* Input with search icon */}
       <div className="relative">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +60,6 @@ export default function SearchBar() {
         />
       </div>
 
-      {/* Search results dropdown */}
       {results.length > 0 && (
         <div className="absolute top-12 w-full bg-black/80 border border-white/20 rounded-lg shadow-lg max-h-60 overflow-y-auto z-50">
           {results.map((movie) => (

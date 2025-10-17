@@ -55,7 +55,6 @@
           ))}
         </ul>
 
-        {/* Logout */}
         <button
           onClick={handleLogout}
           className="mt-auto flex items-center justify-center w-12 h-12 rounded-xl bg-red-600 hover:bg-red-700 text-white transition-all duration-200"

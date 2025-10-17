@@ -18,17 +18,17 @@ export default function Home({ addToWatchLater }) {
   const MovieCard = ({ movie }) => (
     <div
       key={movie.id}
-      className="relative group min-w-[220px] max-w-[20px] min-h-[330px] max-h-[330px] rounded-lg  bg-gray-900 transform transition-all duration-500 hover:scale-150 hover:flex hover:rounded-4xl"
+      className="relative group min-w-[220px] max-w-[20px] min-h-[330px] max-h-[330px] rounded-lg  bg-gray-900 transform transition-all duration-500 hover:rounded-4xl"
     >
       {/* overflow-hidden */}
       <img
         src={movie.post}
         alt={movie.title}
-        className="w-full h-full object-cover group-hover:opacity-0 transition duration-500"
+        className="w-full h-full object-cover group-hover:opacity-100 transition duration-500"
       />
 
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center bg-black/90 p-3 rounded-2xl">
-        <video
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center  p-3 rounded-2xl">
+        {/* <video
           src={movie.video}
           autoPlay
           muted
@@ -37,7 +37,7 @@ export default function Home({ addToWatchLater }) {
         />
         <h3 className="text-lg font-semibold mb-2 text-white text-center">
           {movie.title}
-        </h3>
+        </h3> */}
 
         <div className="flex gap-3">
           <Link
@@ -50,7 +50,6 @@ export default function Home({ addToWatchLater }) {
             onClick={() => addToWatchLater(movie)}
             className="px-3 py-1 bg-gray-700 rounded text-sm hover:bg-gray-600 transition"
           >
-
             + Watch Later
           </button>
         </div>
@@ -70,7 +69,6 @@ export default function Home({ addToWatchLater }) {
             Welcome{user ? `, ${user.name}` : ""}
           </h1>
 
-          {/* Movie Sections */}
           <section className="mb-10">
             <h2 className="text-xl mb-3 text-white">🎬 Upcoming Movies</h2>
             <div className="flex gap-5 scrollbar-hide">
