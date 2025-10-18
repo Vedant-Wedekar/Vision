@@ -645,6 +645,39 @@ export const movies = [
     video: null,
     cast: ["Manoj Bajpayee", "Priyamani", "Sharib Hashmi"]
   },
+  {
+  id: 999,
+  title: "The Prime Battle",
+  year: 2025,
+  rating: "9.1",
+  category: "premium",
+  caste: "premium",
+  length: "2h 10m",
+  languages: "English",
+  description: "An elite secret mission thriller with stunning visuals.",
+  keywords: ["Action", "Thriller", "Exclusive"],
+  img: "",
+  post: "https://yourcdn.com/premium_movie1.jpg",
+  video: null,
+  cast: ["Chris Evans", "Scarlett Johansson"]
+},
+{
+  id: 1000,
+  title: "Mystic Realm",
+  year: 2025,
+  rating: "8.9",
+  category: "premium",
+  caste: "premium",
+  length: "1h 55m",
+  languages: "Hindi",
+  description: "A fantasy world only premium users can explore.",
+  keywords: ["Fantasy", "Adventure", "Premium"],
+  img: "",
+  post: "https://yourcdn.com/premium_movie2.jpg",
+  video: null,
+  cast: ["Hrithik Roshan", "Rashmika Mandanna"]
+}
+,
   
   {
     id: 401,
