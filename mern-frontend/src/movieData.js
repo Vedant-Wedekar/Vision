@@ -793,6 +793,277 @@ export const movies = [
     video: null,
     cast: ["Rishab Shetty", "Rana Daggubati", "Teja Sajja", "Amritha Aiyer", "Samuthirakani"] 
   }
-
+,  {
+    id: 501,
+    title: "The Conjuring: Last Rites",
+    year: 2025,
+    rating: "8.3",
+    category: "horror",
+    caste: "Hollywood",
+    length: "1h 55m",
+    languages: "English",
+    description:
+      "The final chapter in the Conjuring Universe, where Ed and Lorraine Warren face their most dangerous demonic case yet.",
+    keywords: ["Supernatural", "Possession", "Based on True Events"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BYTg0MjNkODctZjcyNi00ZTc4LTkxY2UtZDM4ZTdiNDZjYzIzXkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Patrick Wilson", "Vera Farmiga", "Sterling Jerins"]
+  },
+  {
+    id: 502,
+    title: "Talk to Me",
+    year: 2023,
+    rating: "7.1",
+    category: "horror",
+    caste: "Hollywood",
+    length: "1h 35m",
+    languages: "English",
+    description:
+      "A group of friends discover how to conjure spirits using an embalmed hand, but things quickly go horrifyingly wrong.",
+    keywords: ["Supernatural", "Thriller", "Psychological Horror"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BNGE2YmRlNmQtNDAzZS00NjQyLWI4YmQtNjZmNjg3NDZhNTZhXkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Sophie Wilde", "Joe Bird", "Alexandra Jensen"]
+  },
+  {
+    id: 503,
+    title: "Hereditary",
+    year: 2018,
+    rating: "8.1",
+    category: "horror",
+    caste: "Hollywood",
+    length: "2h 7m",
+    languages: "English",
+    description:
+      "After the death of the family matriarch, a grieving family is haunted by terrifying secrets and supernatural forces.",
+    keywords: ["Psychological", "Family Tragedy", "Occult"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMjA0NDQ5MzUxOF5BMl5BanBnXkFtZTgwMzY1NjM3NTM@._V1_.jpg",
+    video: null,
+    cast: ["Toni Collette", "Alex Wolff", "Milly Shapiro"]
+  },
+  {
+    id: 504,
+    title: "It",
+    year: 2017,
+    rating: "7.3",
+    category: "horror",
+    caste: "Hollywood",
+    length: "2h 15m",
+    languages: "English",
+    description:
+      "A group of bullied kids band together to destroy a shape-shifting clown that preys on their town's children.",
+    keywords: ["Supernatural", "Thriller", "Clown"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMjAyMjg2NTY4MF5BMl5BanBnXkFtZTgwNjYxODI3MjI@._V1_.jpg",
+    video: null,
+    cast: ["Bill Skarsgård", "Jaeden Martell", "Finn Wolfhard"]
+  },
+  {
+    id: 505,
+    title: "A Quiet Place",
+    year: 2018,
+    rating: "7.5",
+    category: "horror",
+    caste: "Hollywood",
+    length: "1h 30m",
+    languages: "English",
+    description:
+      "In a post-apocalyptic world, a family must live in silence while hiding from creatures that hunt by sound.",
+    keywords: ["Thriller", "Monsters", "Survival"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMjA0MTYxMTg0NF5BMl5BanBnXkFtZTgwMzM1NjY2NDM@._V1_.jpg",
+    video: null,
+    cast: ["Emily Blunt", "John Krasinski", "Millicent Simmonds"]
+  },
+  {
+    id: 506,
+    title: "The Nun II",
+    year: 2023,
+    rating: "6.0",
+    category: "horror",
+    caste: "Hollywood",
+    length: "1h 50m",
+    languages: "English",
+    description:
+      "Sister Irene once again comes face to face with the demonic force Valak in a terrifying new chapter.",
+    keywords: ["Supernatural", "Demon", "Religious Horror"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BYzRkMWU4N2QtNjY5ZC00NmQ3LTliODctMTJkMjRmYWM5MTA2XkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Taissa Farmiga", "Bonnie Aarons", "Jonas Bloquet"]
+  },
+  {
+    id: 507,
+    title: "The Exorcist: Believer",
+    year: 2023,
+    rating: "6.4",
+    category: "horror",
+    caste: "Hollywood",
+    length: "1h 51m",
+    languages: "English",
+    description:
+      "Two girls become possessed by a demonic entity, leading their parents to seek help from the only person who has survived something similar before.",
+    keywords: ["Exorcism", "Supernatural", "Religion"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BYTcwNGNmMjQtNjRkYS00YWRkLWI0ZTUtZTM4MTk4YmZjODlmXkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Leslie Odom Jr.", "Ellen Burstyn", "Lidya Jewett"]
+  },
+  {
+    id: 508,
+    title: "Smile",
+    year: 2022,
+    rating: "6.6",
+    category: "horror",
+    caste: "Hollywood",
+    length: "1h 55m",
+    languages: "English",
+    description:
+      "After witnessing a traumatic incident, a psychiatrist begins to experience frightening occurrences she can’t explain.",
+    keywords: ["Psychological", "Supernatural", "Trauma"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BYzMwY2M1NDItMzk4ZC00MzdiLTgxMWItODQ1MzQ4MDZhYWZmXkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Sosie Bacon", "Kyle Gallner", "Caitlin Stasey"]
+  }
+, {
+    id: 601,
+    title: "The Notebook",
+    year: 2004,
+    rating: "8.0",
+    category: "romance",
+    caste: "Hollywood",
+    length: "2h 3m",
+    languages: "English",
+    description:
+      "A timeless love story between Noah and Allie, whose romance defies social class and the test of time.",
+    keywords: ["Drama", "Love Story", "Classic Romance"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMTY4NjQxNzEwNl5BMl5BanBnXkFtZTcwNjY3NTUyMw@@._V1_.jpg",
+    video: null,
+    cast: ["Ryan Gosling", "Rachel McAdams", "James Garner"]
+  },
+  {
+    id: 602,
+    title: "La La Land",
+    year: 2016,
+    rating: "8.0",
+    category: "romance",
+    caste: "Hollywood",
+    length: "2h 8m",
+    languages: "English",
+    description:
+      "A jazz musician and an aspiring actress fall in love but struggle to balance their passion for each other with their artistic dreams.",
+    keywords: ["Musical", "Drama", "Love vs Career"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMTk4OTIwMzYzMl5BMl5BanBnXkFtZTgwMTQ3Njk4OTE@._V1_.jpg",
+    video: null,
+    cast: ["Ryan Gosling", "Emma Stone", "John Legend"]
+  },
+  {
+    id: 603,
+    title: "Titanic",
+    year: 1997,
+    rating: "7.9",
+    category: "romance",
+    caste: "Hollywood",
+    length: "3h 14m",
+    languages: "English",
+    description:
+      "A young aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+    keywords: ["Epic Romance", "Tragedy", "Historical Drama"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMTY5NzcwNDU2N15BMl5BanBnXkFtZTgwMzU2NDA5NDM@._V1_.jpg",
+    video: null,
+    cast: ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"]
+  },
+  {
+    id: 604,
+    title: "Before Sunrise",
+    year: 1995,
+    rating: "8.1",
+    category: "romance",
+    caste: "Hollywood",
+    length: "1h 41m",
+    languages: "English",
+    description:
+      "Two strangers meet on a train and spend one magical night walking through Vienna, sharing their dreams and fears.",
+    keywords: ["Drama", "Conversation", "Love Story"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMjE0Nzg5MjE0NV5BMl5BanBnXkFtZTcwMTY3MzEzMQ@@._V1_.jpg",
+    video: null,
+    cast: ["Ethan Hawke", "Julie Delpy"]
+  },
+  {
+    id: 605,
+    title: "Yeh Jawaani Hai Deewani",
+    year: 2013,
+    rating: "7.2",
+    category: "romance",
+    caste: "Bollywood",
+    length: "2h 40m",
+    languages: "Hindi",
+    description:
+      "A coming-of-age love story between Naina and Bunny, who discover love, life, and friendship during their adventures.",
+    keywords: ["Travel", "Friendship", "Love"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BNjA0ZDM4ZjgtY2Q0OC00ZTRhLTkxZDktNTcwYWQ1MjRkYWU0XkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Ranbir Kapoor", "Deepika Padukone", "Aditya Roy Kapur", "Kalki Koechlin"]
+  },
+  {
+    id: 606,
+    title: "Tamasha",
+    year: 2015,
+    rating: "7.3",
+    category: "romance",
+    caste: "Bollywood",
+    length: "2h 19m",
+    languages: "Hindi",
+    description:
+      "Ved and Tara’s love story unfolds as they discover their true selves while navigating love, passion, and identity.",
+    keywords: ["Drama", "Self-Discovery", "Love Story"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMjA3NDU2NzExMl5BMl5BanBnXkFtZTgwOTQ5NjI1NzE@._V1_.jpg",
+    video: null,
+    cast: ["Ranbir Kapoor", "Deepika Padukone"]
+  },
+  {
+    id: 607,
+    title: "The Fault in Our Stars",
+    year: 2014,
+    rating: "7.7",
+    category: "romance",
+    caste: "Hollywood",
+    length: "2h 6m",
+    languages: "English",
+    description:
+      "Two teenagers with cancer fall deeply in love while grappling with the fragility of life and the meaning of love.",
+    keywords: ["Tragedy", "Drama", "Young Love"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMTU1MjY2NjA5MV5BMl5BanBnXkFtZTgwNzYxNTk4MTE@._V1_.jpg",
+    video: null,
+    cast: ["Shailene Woodley", "Ansel Elgort", "Laura Dern"]
+  },
+  {
+    id: 608,
+    title: "Rocky Aur Rani Kii Prem Kahaani",
+    year: 2023,
+    rating: "7.0",
+    category: "romance",
+    caste: "Bollywood",
+    length: "2h 48m",
+    languages: "Hindi",
+    description:
+      "A flamboyant Punjabi boy and an intelligent Bengali girl fall in love, navigating family drama and cultural clashes.",
+    keywords: ["Drama", "Family", "Romantic Comedy"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMDA2NTE4NjQtZWZkNC00NDg4LWI2ZjQtMmVhZDA0YmJkNTA0XkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Ranveer Singh", "Alia Bhatt", "Dharmendra", "Jaya Bachchan"]
+  }
 
 ];
