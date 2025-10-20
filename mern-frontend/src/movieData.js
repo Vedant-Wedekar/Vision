@@ -1065,5 +1065,106 @@ export const movies = [
     video: null,
     cast: ["Ranveer Singh", "Alia Bhatt", "Dharmendra", "Jaya Bachchan"]
   }
-
+,{
+    id: 701,
+    title: "John Wick: Chapter 4",
+    year: 2023,
+    rating: "8.0",
+    category: "action",
+    caste: "Hollywood",
+    length: "2h 49m",
+    languages: "English",
+    description:
+      "John Wick uncovers a path to defeating the High Table, but before he can earn his freedom, he must face a new enemy with powerful alliances.",
+    keywords: ["Assassin", "Revenge", "Gunfights"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BNGE2NDQyMDYtNmZjYy00Y2QzLWJlZmQtOTRhZWM3M2U2YWViXkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Keanu Reeves", "Donnie Yen", "Laurence Fishburne"]
+  },
+  {
+    id: 702,
+    title: "Extraction 2",
+    year: 2023,
+    rating: "7.0",
+    category: "action",
+    caste: "Hollywood",
+    length: "2h 3m",
+    languages: "English",
+    description:
+      "After barely surviving his previous mission, Tyler Rake returns as a black-ops mercenary assigned to rescue a ruthless gangster's family.",
+    keywords: ["Rescue", "Thriller", "Combat"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BZDliZjJkNDUtNjFkNy00ZmZmLTk4YjQtZGE0ZDJmNmE3ZmVmXkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Chris Hemsworth", "Golshifteh Farahani", "Adam Bessa"]
+  },
+  {
+    id: 703,
+    title: "Mission: Impossible – Dead Reckoning Part One",
+    year: 2023,
+    rating: "7.8",
+    category: "action",
+    caste: "Hollywood",
+    length: "2h 43m",
+    languages: "English",
+    description:
+      "Ethan Hunt and his IMF team must track down a deadly new weapon that threatens humanity before it falls into the wrong hands.",
+    keywords: ["Spy", "Thriller", "Adventure"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BNTY1ZDUxNjgtMmU3Mi00NzJkLTgxMDUtNjYzYjY0Mzg1NTAxXkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Tom Cruise", "Hayley Atwell", "Ving Rhames"]
+  },
+  {
+    id: 704,
+    title: "Jawan",
+    year: 2023,
+    rating: "7.5",
+    category: "action",
+    caste: "Bollywood",
+    length: "2h 49m",
+    languages: "Hindi",
+    description:
+      "A man driven by personal revenge and social justice takes on corruption and evil forces in the system.",
+    keywords: ["Thriller", "Revenge", "Patriotism"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BMjA0OWM3YjAtNzY4Ny00YWI1LTgwYjctZjZkMmU1NTgyY2Y3XkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Shah Rukh Khan", "Nayanthara", "Vijay Sethupathi"]
+  },
+  {
+    id: 705,
+    title: "Top Gun: Maverick",
+    year: 2022,
+    rating: "8.3",
+    category: "action",
+    caste: "Hollywood",
+    length: "2h 10m",
+    languages: "English",
+    description:
+      "After thirty years, Maverick is still pushing the limits as a top naval aviator while training a new generation of fighter pilots.",
+    keywords: ["Jets", "Patriotism", "Legacy"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BNzUzYzk2ZTAtY2JmYy00Yzg4LWJmYzctY2I0Y2VlOGUzYzcwXkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Tom Cruise", "Miles Teller", "Jennifer Connelly"]
+  },
+  {
+    id: 706,
+    title: "Pathaan",
+    year: 2023,
+    rating: "6.9",
+    category: "action",
+    caste: "Bollywood",
+    length: "2h 26m",
+    languages: "Hindi",
+    description:
+      "An exiled RAW agent must stop a private terror group from attacking India with a deadly biological weapon.",
+    keywords: ["Spy", "Thriller", "Patriotism"],
+    img: "",
+    post: "https://m.media-amazon.com/images/M/MV5BYzE0ZjE2MzQtOGMwZC00ZjE0LWI0NmMtOGU2YzUxYWQ3NDc2XkEyXkFqcGc@._V1_.jpg",
+    video: null,
+    cast: ["Shah Rukh Khan", "Deepika Padukone", "John Abraham"]
+  },
 ];
