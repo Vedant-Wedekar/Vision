@@ -806,7 +806,7 @@ export const movies = [
       "The final chapter in the Conjuring Universe, where Ed and Lorraine Warren face their most dangerous demonic case yet.",
     keywords: ["Supernatural", "Possession", "Based on True Events"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BYTg0MjNkODctZjcyNi00ZTc4LTkxY2UtZDM4ZTdiNDZjYzIzXkEyXkFqcGc@._V1_.jpg",
+    post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNDC5mpBd18M-uuprtHnV8OtrYeC0jzSKhew&s",
     video: null,
     cast: ["Patrick Wilson", "Vera Farmiga", "Sterling Jerins"]
   },
@@ -823,7 +823,7 @@ export const movies = [
       "A group of friends discover how to conjure spirits using an embalmed hand, but things quickly go horrifyingly wrong.",
     keywords: ["Supernatural", "Thriller", "Psychological Horror"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BNGE2YmRlNmQtNDAzZS00NjQyLWI4YmQtNjZmNjg3NDZhNTZhXkEyXkFqcGc@._V1_.jpg",
+    post: "https://m.media-amazon.com/images/M/MV5BMzY4NDI3ZGQtOTg0NS00YzllLWI5MTctYWY4NDVlMzEyYmI5XkEyXkFqcGc@._V1_.jpg",
     video: null,
     cast: ["Sophie Wilde", "Joe Bird", "Alexandra Jensen"]
   },
@@ -840,7 +840,7 @@ export const movies = [
       "After the death of the family matriarch, a grieving family is haunted by terrifying secrets and supernatural forces.",
     keywords: ["Psychological", "Family Tragedy", "Occult"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMjA0NDQ5MzUxOF5BMl5BanBnXkFtZTgwMzY1NjM3NTM@._V1_.jpg",
+    post: "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fd%2Fgracenote%2Fd0d1e0f60a30c52503cf417cee32a9aa.jpg",
     video: null,
     cast: ["Toni Collette", "Alex Wolff", "Milly Shapiro"]
   },
@@ -857,7 +857,7 @@ export const movies = [
       "A group of bullied kids band together to destroy a shape-shifting clown that preys on their town's children.",
     keywords: ["Supernatural", "Thriller", "Clown"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMjAyMjg2NTY4MF5BMl5BanBnXkFtZTgwNjYxODI3MjI@._V1_.jpg",
+    post: "https://upload.wikimedia.org/wikipedia/en/5/5a/It_%282017%29_poster.jpg",
     video: null,
     cast: ["Bill Skarsgård", "Jaeden Martell", "Finn Wolfhard"]
   },
@@ -874,7 +874,7 @@ export const movies = [
       "In a post-apocalyptic world, a family must live in silence while hiding from creatures that hunt by sound.",
     keywords: ["Thriller", "Monsters", "Survival"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMjA0MTYxMTg0NF5BMl5BanBnXkFtZTgwMzM1NjY2NDM@._V1_.jpg",
+    post: "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_.jpg",
     video: null,
     cast: ["Emily Blunt", "John Krasinski", "Millicent Simmonds"]
   },
@@ -891,27 +891,11 @@ export const movies = [
       "Sister Irene once again comes face to face with the demonic force Valak in a terrifying new chapter.",
     keywords: ["Supernatural", "Demon", "Religious Horror"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BYzRkMWU4N2QtNjY5ZC00NmQ3LTliODctMTJkMjRmYWM5MTA2XkEyXkFqcGc@._V1_.jpg",
+    post: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/The_Nun_II_%282023%29.jpg/250px-The_Nun_II_%282023%29.jpg",
     video: null,
     cast: ["Taissa Farmiga", "Bonnie Aarons", "Jonas Bloquet"]
   },
-  {
-    id: 507,
-    title: "The Exorcist: Believer",
-    year: 2023,
-    rating: "6.4",
-    category: "horror",
-    caste: "Hollywood",
-    length: "1h 51m",
-    languages: "English",
-    description:
-      "Two girls become possessed by a demonic entity, leading their parents to seek help from the only person who has survived something similar before.",
-    keywords: ["Exorcism", "Supernatural", "Religion"],
-    img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BYTcwNGNmMjQtNjRkYS00YWRkLWI0ZTUtZTM4MTk4YmZjODlmXkEyXkFqcGc@._V1_.jpg",
-    video: null,
-    cast: ["Leslie Odom Jr.", "Ellen Burstyn", "Lidya Jewett"]
-  },
+
   {
     id: 508,
     title: "Smile",
@@ -925,7 +909,7 @@ export const movies = [
       "After witnessing a traumatic incident, a psychiatrist begins to experience frightening occurrences she can’t explain.",
     keywords: ["Psychological", "Supernatural", "Trauma"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BYzMwY2M1NDItMzk4ZC00MzdiLTgxMWItODQ1MzQ4MDZhYWZmXkEyXkFqcGc@._V1_.jpg",
+    post: "https://play-lh.googleusercontent.com/NLd3erPoZmSi0oczSzNqq_MF0q-2sGR2PRLD9_RrgAGHjLjRWI5zbs4LrI8NGa-k0zcfQvV6B6hcii4zIRg=w240-h480-rw",
     video: null,
     cast: ["Sosie Bacon", "Kyle Gallner", "Caitlin Stasey"]
   }
@@ -942,7 +926,7 @@ export const movies = [
       "A timeless love story between Noah and Allie, whose romance defies social class and the test of time.",
     keywords: ["Drama", "Love Story", "Classic Romance"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMTY4NjQxNzEwNl5BMl5BanBnXkFtZTcwNjY3NTUyMw@@._V1_.jpg",
+    post: "https://images.moviesanywhere.com/3f8a2408122a35b5aa92727c1909db86/b0cf1ba3-0535-41e1-8713-fad6f87e245d.jpg",
     video: null,
     cast: ["Ryan Gosling", "Rachel McAdams", "James Garner"]
   },
@@ -959,7 +943,7 @@ export const movies = [
       "A jazz musician and an aspiring actress fall in love but struggle to balance their passion for each other with their artistic dreams.",
     keywords: ["Musical", "Drama", "Love vs Career"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMTk4OTIwMzYzMl5BMl5BanBnXkFtZTgwMTQ3Njk4OTE@._V1_.jpg",
+    post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUMLQlHu_gPQYe_hrYq9DvpQV2Du0JTUtOEg&s",
     video: null,
     cast: ["Ryan Gosling", "Emma Stone", "John Legend"]
   },
@@ -976,7 +960,7 @@ export const movies = [
       "A young aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
     keywords: ["Epic Romance", "Tragedy", "Historical Drama"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMTY5NzcwNDU2N15BMl5BanBnXkFtZTgwMzU2NDA5NDM@._V1_.jpg",
+    post: "https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_.jpg",
     video: null,
     cast: ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"]
   },
@@ -993,7 +977,7 @@ export const movies = [
       "Two strangers meet on a train and spend one magical night walking through Vienna, sharing their dreams and fears.",
     keywords: ["Drama", "Conversation", "Love Story"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMjE0Nzg5MjE0NV5BMl5BanBnXkFtZTcwMTY3MzEzMQ@@._V1_.jpg",
+    post: "https://upload.wikimedia.org/wikipedia/en/d/da/Before_Sunrise_poster.jpg",
     video: null,
     cast: ["Ethan Hawke", "Julie Delpy"]
   },
@@ -1010,7 +994,7 @@ export const movies = [
       "A coming-of-age love story between Naina and Bunny, who discover love, life, and friendship during their adventures.",
     keywords: ["Travel", "Friendship", "Love"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BNjA0ZDM4ZjgtY2Q0OC00ZTRhLTkxZDktNTcwYWQ1MjRkYWU0XkEyXkFqcGc@._V1_.jpg",
+    post: "https://m.media-amazon.com/images/M/MV5BODA4MjM2ODk4OF5BMl5BanBnXkFtZTcwNDgzODk1OQ@@._V1_FMjpg_UX1000_.jpg",
     video: null,
     cast: ["Ranbir Kapoor", "Deepika Padukone", "Aditya Roy Kapur", "Kalki Koechlin"]
   },
@@ -1027,7 +1011,7 @@ export const movies = [
       "Ved and Tara’s love story unfolds as they discover their true selves while navigating love, passion, and identity.",
     keywords: ["Drama", "Self-Discovery", "Love Story"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMjA3NDU2NzExMl5BMl5BanBnXkFtZTgwOTQ5NjI1NzE@._V1_.jpg",
+    post: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12217149_p_v8_ab.jpg",
     video: null,
     cast: ["Ranbir Kapoor", "Deepika Padukone"]
   },
@@ -1044,27 +1028,11 @@ export const movies = [
       "Two teenagers with cancer fall deeply in love while grappling with the fragility of life and the meaning of love.",
     keywords: ["Tragedy", "Drama", "Young Love"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMTU1MjY2NjA5MV5BMl5BanBnXkFtZTgwNzYxNTk4MTE@._V1_.jpg",
+    post: "https://upload.wikimedia.org/wikipedia/en/4/41/The_Fault_in_Our_Stars_%28Official_Film_Poster%29.png",
     video: null,
     cast: ["Shailene Woodley", "Ansel Elgort", "Laura Dern"]
   },
-  {
-    id: 608,
-    title: "Rocky Aur Rani Kii Prem Kahaani",
-    year: 2023,
-    rating: "7.0",
-    category: "romance",
-    caste: "Bollywood",
-    length: "2h 48m",
-    languages: "Hindi",
-    description:
-      "A flamboyant Punjabi boy and an intelligent Bengali girl fall in love, navigating family drama and cultural clashes.",
-    keywords: ["Drama", "Family", "Romantic Comedy"],
-    img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMDA2NTE4NjQtZWZkNC00NDg4LWI2ZjQtMmVhZDA0YmJkNTA0XkEyXkFqcGc@._V1_.jpg",
-    video: null,
-    cast: ["Ranveer Singh", "Alia Bhatt", "Dharmendra", "Jaya Bachchan"]
-  }
+
 ,{
     id: 701,
     title: "John Wick: Chapter 4",
@@ -1078,7 +1046,7 @@ export const movies = [
       "John Wick uncovers a path to defeating the High Table, but before he can earn his freedom, he must face a new enemy with powerful alliances.",
     keywords: ["Assassin", "Revenge", "Gunfights"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BNGE2NDQyMDYtNmZjYy00Y2QzLWJlZmQtOTRhZWM3M2U2YWViXkEyXkFqcGc@._V1_.jpg",
+    post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbfbYto0_QLCZWWrH8ogQ_1irvTITqfyKiDg&s",
     video: null,
     cast: ["Keanu Reeves", "Donnie Yen", "Laurence Fishburne"]
   },
@@ -1095,7 +1063,7 @@ export const movies = [
       "After barely surviving his previous mission, Tyler Rake returns as a black-ops mercenary assigned to rescue a ruthless gangster's family.",
     keywords: ["Rescue", "Thriller", "Combat"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BZDliZjJkNDUtNjFkNy00ZmZmLTk4YjQtZGE0ZDJmNmE3ZmVmXkEyXkFqcGc@._V1_.jpg",
+    post: "https://upload.wikimedia.org/wikipedia/en/0/02/Extraction_2_poster.jpg",
     video: null,
     cast: ["Chris Hemsworth", "Golshifteh Farahani", "Adam Bessa"]
   },
@@ -1112,7 +1080,7 @@ export const movies = [
       "Ethan Hunt and his IMF team must track down a deadly new weapon that threatens humanity before it falls into the wrong hands.",
     keywords: ["Spy", "Thriller", "Adventure"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BNTY1ZDUxNjgtMmU3Mi00NzJkLTgxMDUtNjYzYjY0Mzg1NTAxXkEyXkFqcGc@._V1_.jpg",
+    post: "https://upload.wikimedia.org/wikipedia/en/e/ed/Mission-_Impossible_%E2%80%93_Dead_Reckoning_Part_One_poster.jpg",
     video: null,
     cast: ["Tom Cruise", "Hayley Atwell", "Ving Rhames"]
   },
@@ -1129,7 +1097,7 @@ export const movies = [
       "A man driven by personal revenge and social justice takes on corruption and evil forces in the system.",
     keywords: ["Thriller", "Revenge", "Patriotism"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BMjA0OWM3YjAtNzY4Ny00YWI1LTgwYjctZjZkMmU1NTgyY2Y3XkEyXkFqcGc@._V1_.jpg",
+    post: "https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYWQzODczNGYwLTRlNmQtMTFlZi1iMzFjLWM3ZTc5MGQ0OWM0MS5qcGc=",
     video: null,
     cast: ["Shah Rukh Khan", "Nayanthara", "Vijay Sethupathi"]
   },
@@ -1146,7 +1114,7 @@ export const movies = [
       "After thirty years, Maverick is still pushing the limits as a top naval aviator while training a new generation of fighter pilots.",
     keywords: ["Jets", "Patriotism", "Legacy"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BNzUzYzk2ZTAtY2JmYy00Yzg4LWJmYzctY2I0Y2VlOGUzYzcwXkEyXkFqcGc@._V1_.jpg",
+    post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6j5bFyToN8130-qtTHdD1vEyTN3QX_PRIUw&s",
     video: null,
     cast: ["Tom Cruise", "Miles Teller", "Jennifer Connelly"]
   },
@@ -1163,7 +1131,7 @@ export const movies = [
       "An exiled RAW agent must stop a private terror group from attacking India with a deadly biological weapon.",
     keywords: ["Spy", "Thriller", "Patriotism"],
     img: "",
-    post: "https://m.media-amazon.com/images/M/MV5BYzE0ZjE2MzQtOGMwZC00ZjE0LWI0NmMtOGU2YzUxYWQ3NDc2XkEyXkFqcGc@._V1_.jpg",
+    post: "https://play-lh.googleusercontent.com/IOGFfbXRkbuunblFh2pdlBmXGq-h61SzeqNOf2qMWlDlN7YBEdAfQrYA18BpB6U8ciYu1S5XN5GBPBbE4y4",
     video: null,
     cast: ["Shah Rukh Khan", "Deepika Padukone", "John Abraham"]
   },
