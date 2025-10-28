@@ -61,6 +61,8 @@ export const movies = [
       title: "Mission: Impossible – The Final Reckoning",
       year: 2025,
       rating: "PG-13",
+    category: "hollywood",
+
       category: "hollywood",
         category: "english",
       caste:"popular",
@@ -161,14 +163,29 @@ export const movies = [
     cast: ["Akshay Kumar", "Critics Cast"]
   },
   {
+    category: "bollywood", 
     post:"https://m.media-amazon.com/images/M/MV5BMTk2ZmFhYjctYWZiYy00N2IxLWEzMWItZGRiMDY4ZDQwZWFlXkEyXkFqcGc@._V1_.jpg",
     id: 9,
-    title: "Saiyaara",    caste:"popular",
-    year: 2025,category: "hindi",
+    title: "Saiyaara",  
+      caste:"popular",
+    year: 2025,
     rating: "U/A",
-    category: "bollywood",
-     category: "hindi",
-
+    length: "2h 05m",
+    languages: "Hindi",
+    description:
+      "A romantic musical drama that strikes emotion with soul-stirring music and heartwarming storytelling.",
+    keywords: ["Romance", "Drama", "Music"],
+    img: "https://example.com/saiyaara.jpg",
+    video: Pan,
+    cast: ["Ahaan Panday", "Aneet Padda"]
+  }, {
+    post:"https://m.media-amazon.com/images/M/MV5BMTk2ZmFhYjctYWZiYy00N2IxLWEzMWItZGRiMDY4ZDQwZWFlXkEyXkFqcGc@._V1_.jpg",
+    id: 9,
+    title: "Saiyaara",  
+      caste:"popular",
+    year: 2025,
+    category: "hindi",
+    rating: "U/A",
     length: "2h 05m",
     languages: "Hindi",
     description:
