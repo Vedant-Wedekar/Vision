@@ -135,7 +135,6 @@ export const movies = [
     rating: "U/A",
     category: "bollywood",
     
-
     length: "2h 30m",
     languages: "Hindi",
     description:
