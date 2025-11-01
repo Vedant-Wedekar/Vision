@@ -25,12 +25,12 @@ export default function Home({ addToWatchLater }) {
     return (
       <div
         key={movie.id}
-        className="relative group min-w-[220px] max-w-[20px] min-h-[330px] max-h-[330px] rounded-lg bg-gray-900 transform transition-all duration-500 hover:rounded-4xl"
+        className="relative group min-w-[220px] max-w-[220px] min-h-[330px] max-h-[330px] rounded-lg bg-gray-900 transform transition-all duration-500 hover:scale-105"
       >
         <img
           src={movie.post}
           alt={movie.title}
-          className="w-full h-full object-cover group-hover:opacity-100 transition duration-500 rounded-lg"
+          className="w-full h-[330px] object-cover rounded-lg transition duration-500"
         />
 
         {/* Hover actions */}
@@ -87,7 +87,7 @@ export default function Home({ addToWatchLater }) {
           {/* 🎬 Upcoming Movies */}
           <section className="mb-10">
             <h2 className="text-xl mb-3 text-white">🎬 Upcoming Movies</h2>
-            <div className="flex gap-5 scrollbar-hide">
+            <div className="flex gap-5 overflow-x-auto scrollbar-hide scroll-smooth pb-4">
               {upcoming.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />
               ))}
@@ -103,7 +103,7 @@ export default function Home({ addToWatchLater }) {
                 : "These are premium movies — unlock them by subscribing!"}
             </p>
 
-            <div className="flex gap-5 scrollbar-hide">
+            <div className="flex gap-5 overflow-x-auto scrollbar-hide scroll-smooth pb-4">
               {premium.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} isPremium={true} />
               ))}
@@ -133,7 +133,7 @@ export default function Home({ addToWatchLater }) {
           {/* ⭐ Popular Movies */}
           <section className="mb-10">
             <h2 className="text-xl mb-3 text-white">⭐ Popular Movies</h2>
-            <div className="flex gap-5 scrollbar-hide">
+            <div className="flex gap-5 overflow-x-auto scrollbar-hide scroll-smooth pb-4">
               {popular.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />
               ))}
@@ -143,7 +143,7 @@ export default function Home({ addToWatchLater }) {
           {/* 📺 Shows */}
           <section className="mb-10">
             <h2 className="text-xl mb-3 text-white">📺 Shows</h2>
-            <div className="flex gap-5 scrollbar-hide">
+            <div className="flex gap-5 overflow-x-auto scrollbar-hide scroll-smooth pb-4">
               {shows.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />
               ))}
@@ -153,7 +153,7 @@ export default function Home({ addToWatchLater }) {
           {/* 🏆 Top Rated IMDb */}
           <section className="mb-10">
             <h2 className="text-xl mb-3 text-white">🏆 Top Rated IMDb</h2>
-            <div className="flex gap-5 scrollbar-hide">
+            <div className="flex gap-5 overflow-x-auto scrollbar-hide scroll-smooth pb-4">
               {topRated.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />
               ))}
