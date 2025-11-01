@@ -77,6 +77,7 @@ export const assets = {
     arrow_left,
     arrow_right,
     spotify_logo,
+     default_track: "/default_track.jpg",
     clock_icon
 }
 
