@@ -24,10 +24,10 @@ export default function Category({ addToWatchLater }) {
       <img
         src={movie.post}
         alt={movie.title}
-        className="w-full h-full object-cover group-hover:opacity-0 transition duration-500"
+        className="w-full h-full object-cover group-hover:opacity-100 transition duration-500"
       />
 
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center bg-black/90 p-3 rounded-2xl">
+      <div className="absolute inset-0 opacity-100 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center bg-black/90 p-3 rounded-2xl">
         <video
           src={movie.video}
           autoPlay
