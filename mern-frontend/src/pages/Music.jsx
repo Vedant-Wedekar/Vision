@@ -14,7 +14,7 @@ const Music = () => {
       
         <Header />
             <Sideebar />
-      <div className="h-[90%] w-[100% ] flex ml-20">
+      <div className="h-[90%] w-[100% ] bg-[#0F1014] flex ml-20">
         <Display/>
       </div>
       <Player className="" />
