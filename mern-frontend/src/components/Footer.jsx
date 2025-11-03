@@ -17,7 +17,7 @@ const Footer = () => {
     </p>
 
     <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-      <li>
+      {/* <li>
         <a
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
           href="#"
@@ -35,7 +35,7 @@ const Footer = () => {
         >
           Blog
         </a>
-      </li>
+      </li> */}
     </ul>
 
     <ul className="mt-12 flex justify-center gap-6 md:gap-8">

@@ -17,7 +17,7 @@ const Display = () => {
       displayRef.current.style.background = `linear-gradient(${bgColor},#0F1014)`;
     }
     else{
-      displayRef.current.style.background = "#121212";
+      displayRef.current.style.background = "#0F1014";
     }
   })
   return (
