@@ -38,17 +38,27 @@ export default function Header() {
 
           <div className="flex items-center space-x-5 ml-100">
             {/* ✅ Subscribe Button */}
-            <button
-              onClick={handleSubscribeClick}
-              className={`px-5 py-2.5 font-medium text-sm rounded-lg border border-white/20 backdrop-blur-sm transition-all duration-300
-                ${
-                  user?.paidSubscriber
-                    ? 'bg-green-600 hover:bg-green-700'
-                    : 'bg-white/10 hover:bg-white/20 text-white'
-                }`}
-            >
-              {user?.paidSubscriber ? 'Subscribed ✅' : 'Subscribe'}
-            </button>
+          {/* ✅ Subscribe Button (Improved Design) */}
+{/* ✅ Subscribe Button (Premium Pop Design) */}
+{/* ✅ Subscribe Button (True POP Effect) */}
+<button
+  onClick={handleSubscribeClick}
+  className={`relative overflow-hidden px-7 py-2.5 font-semibold text-sm rounded-full transition-all duration-300 transform
+    ${
+      user?.paidSubscriber
+        ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-[0_0_20px_rgba(16,185,129,0.7)] hover:scale-110 hover:shadow-[0_0_30px_rgba(16,185,129,1)]'
+        : 'bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white shadow-[0_0_25px_rgba(236,72,153,0.8)] hover:scale-110 hover:shadow-[0_0_40px_rgba(236,72,153,1)]'
+    }`}
+>
+  <span className="relative z-10 flex items-center gap-2">
+    {user?.paidSubscriber ? 'Subscribed ✅' : 'Subscribe Now ✨'}
+  </span>
+
+  {/* Animated shine overlay */}
+  <span className="absolute top-0 left-[-75%] w-[50%] h-full bg-gradient-to-r from-transparent via-white/60 to-transparent opacity-0 group-hover:opacity-100 translate-x-0 group-hover:translate-x-[200%] transition-all duration-700 ease-out"></span>
+</button>
+
+
 
             <div className="flex items-center space-x-2">
               <img
