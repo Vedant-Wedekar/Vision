@@ -34,7 +34,7 @@ export default function Home({ addToWatchLater }) {
         />
 
         {/* Hover actions */}
-        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center p-3 rounded-2xl bg-black/60">
+         <div className="absolute mt-50 inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center bg-black/50 backdrop-blur-md p-3 rounded-2xl">
           <h3 className="text-white text-sm font-semibold mb-2 text-center">
             {movie.title}
           </h3>

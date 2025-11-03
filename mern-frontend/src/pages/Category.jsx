@@ -1,4 +1,3 @@
-// src/pages/Category.jsx
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
@@ -21,25 +20,27 @@ export default function Category({ addToWatchLater }) {
       key={movie.id}
       className="relative group min-w-[220px] max-w-[220px] h-[330px] rounded-lg overflow-hidden bg-gray-900 transform transition-all duration-500 hover:scale-110 hover:rounded-2xl"
     >
+      {/* Movie Poster */}
       <img
         src={movie.post}
         alt={movie.title}
-        className="w-full h-full object-cover group-hover:opacity-100 transition duration-500"
+        className="w-full h-full object-cover transition-all duration-500"
       />
 
-      <div className="absolute inset-0 opacity-100 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center bg-black/90 p-3 rounded-2xl">
-        <video
+      {/* Hover Content */}
+  <div className="absolute mt-50 inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center bg-black/50 backdrop-blur-md p-3 rounded-2xl">
+        {/* <video
           src={movie.video}
           autoPlay
           muted
           loop
-          className="w-full h-40 object-cover rounded-md mb-3"
-        />
-        <h3 className="text-lg font-semibold mb-2 text-white text-center">
+          className="w-full h-40 object-cover rounded-md mb-3 shadow-lg"
+        /> */}
+        <h3 className="text-lg font-semibold mb-2 text-white text-center drop-shadow-md">
           {movie.title}
         </h3>
 
-        <div className="flex gap-3">
+        <div className="flex gap-3 text-white">
           <Link
             to={`/player/${movie.id}`}
             className="px-3 py-1 bg-red-600 rounded text-sm hover:bg-red-700 transition"
