@@ -1,100 +1,99 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
+import "./Profile.css";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { Mail, User, Calendar, LogOut, Phone, MapPin } from "lucide-react";
+import Sidebar from "../components/Sidebar";
 
 export default function Profile() {
-  const { user, logout } = useContext(AuthContext);
-  const navigate = useNavigate();
+  const { user } = useContext(AuthContext);
 
-  const handleLogout = () => {
-    logout();
-    navigate("/login");
-  };
+  if (!user)
+    return <div className="profile-loading">Loading your profile...</div>;
 
-  const joinDate = user?.createdAt
-    ? new Date(user.createdAt).toLocaleDateString()
-    : "March 2024";
+  const formattedJoinDate = new Date(user.createdAt).toLocaleDateString();
+  const formattedUpdateDate = new Date(user.updatedAt).toLocaleDateString();
 
-  return ( <div className="">
-    <div className="min-h-screen flex flex-col md:flex-row bg-[#0F1014] text-white relative overflow-hidden">
-      {/* Sidebar */}
-      <Sidebar />
-
-      {/* Gradient Background */}
-      <div className="absolute inset-0  blur-3xl opacity-60"></div>
-
-      {/* Main Section */}
-      <div className="flex-1 flex flex-col items-center justify-center px-6 py-10 relative z-10">
-        <Header />
-
-        <div className="relative bg-[#151820]/80 backdrop-blur-2xl p-10 rounded-3xl shadow-2xl border border-[#2a2d35] w-[400px] sm:w-[450px] text-center transition-transform transform hover:scale-[1.02] duration-300">
-          {/* Profile Image */}
-          <div className="mb-6 relative">
+  return (
+    <div className="profile-container mt-10">
+      <Header />
+            <Sidebar />
+      <div className="profile-glass-card">
+        <div className="profile-top">
+          <div className="profile-info">
             <img
-              src={`https://ui-avatars.com/api/?name=${user?.name || "User"}&background=3b82f6&color=fff&bold=true`}
-              alt="Profile"
-              className="w-28 h-28 rounded-full mx-auto border-4 border-[#3B82F6] shadow-lg relative z-10"
+              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              alt="User Avatar"
+              className="profile-avatar"
             />
-          </div>
-
-          {/* Name */}
-          <h1 className="text-3xl font-bold mb-2 tracking-wide">
-            {user?.name || "User Name"}
-          </h1>
-      
-
-          {/* Details Section */}
-          {user ? (
-            <div className="text-left space-y-4 mb-8">
-              <div className="flex items-center gap-3">
-                <User className="text-blue-400" size={20} />
-                <span className="text-gray-300">
-                  <strong className="text-white">Username:</strong>{" "}
-                  {user.name || "N/A"}
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <Mail className="text-pink-400" size={20} />
-                <span className="text-gray-300">
-                  <strong className="text-white">Email:</strong>{" "}
-                  {user.email || "N/A"}
-                </span>
-              </div>
-
-            
-
-           
-
-              <div className="flex items-center gap-3">
-                <Calendar className="text-purple-400" size={20} />
-                <span className="text-gray-300">
-                  <strong className="text-white">Joined:</strong> {joinDate}
-                </span>
+            <div className="profile-text">
+              <h2>{user.name}</h2>
+              <p>{user.email}</p>
+              <div
+                className={`subscription-status ${
+                  user.paidSubscriber ? "premium" : "free"
+                }`}
+              >
+                {user.paidSubscriber ? "🌟 Premium Member" : "Free Member"}
               </div>
             </div>
-          ) : (
-            <p className="text-gray-400 animate-pulse">
-              Loading profile details...
-            </p>
-          )}
-
-          {/* Logout Button */}
-          <button
-            onClick={handleLogout}
-            className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 px-8 py-2 rounded-xl text-white font-semibold shadow-lg hover:shadow-red-700/50 transition-all duration-300"
-          >
-            <LogOut size={18} /> Logout
-          </button>
+          </div>
         </div>
 
-       
-      </div> 
-    </div><Footer />
-   </div>
+        {/* --- Divider --- */}
+        <hr className="profile-divider" />
+
+        {/* --- Account Details --- */}
+        <div className="profile-details">
+          <h3>Account Details</h3>
+          <div className="details-grid">
+            <div>
+              <span className="detail-label">Name:</span>
+              <span>{user.name}</span>
+            </div>
+            <div>
+              <span className="detail-label">Email:</span>
+              <span>{user.email}</span>
+            </div>
+            <div>
+              <span className="detail-label">Membership:</span>
+              <span>
+                {user.paidSubscriber ? "Premium" : "Free (Upgrade soon!)"}
+              </span>
+            </div>
+            <div>
+              <span className="detail-label">Joined:</span>
+              <span>{formattedJoinDate}</span>
+            </div>
+            <div>
+              <span className="detail-label">Last Updated:</span>
+              <span>{formattedUpdateDate}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* --- Watch Later Section --- */}
+        <div className="watchlater-section">
+          <h3>🎬 Your Watch Later List</h3>
+          {user.watchLater && user.watchLater.length > 0 ? (
+            <div className="movie-grid">
+              {user.watchLater.map((movie) => (
+                <div key={movie.movieId} className="movie-card">
+                  <img
+                    src={movie.poster}
+                    alt={movie.title}
+                    className="movie-poster"
+                  />
+                  <div className="movie-overlay">
+                    <p className="movie-title">{movie.title}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="empty-text">No movies in your Watch Later list yet.</p>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
