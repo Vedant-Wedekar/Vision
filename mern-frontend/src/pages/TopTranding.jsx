@@ -15,7 +15,7 @@ export default function TopTrending({ addToWatchLater }) {
   ];
 
   return (
-    <div className="bg-black min-h-screen ml-20 flex a">
+    <div className="bg-[#0F1014] min-h-screen ml-20 flex a">
       <Sidebar />
 
       <div className="flex-1 flex flex-col">
@@ -33,14 +33,14 @@ export default function TopTrending({ addToWatchLater }) {
                   .map((movie) => (
                     <div
                       key={movie.id}
-                      className="relative group min-w-[220px] max-w-[220px] h-[330px] rounded-lg  transform transition-all duration-500 "
+                      className="relative group min-w-[220px] max-w-[220px] h-[330px] rounded-lg hover:scale-105  transform transition-all duration-500 "
                     >
                       <img
                         src={movie.post}
                         alt={movie.title}
-                        className="w-full h-full object-cover group-hover:opacity-50 transition duration-500"
+                        className="w-full h-full object-cover  transition duration-500"
                       />
-                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center  p-3 rounded-2xl">
+                        <div className="absolute mt-50 inset-0  opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center bg-black/50 backdrop-blur-md p-3 rounded-2xl">
                         {/* <video
                           src={movie.video}
                           autoPlay
