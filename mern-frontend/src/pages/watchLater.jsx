@@ -89,6 +89,7 @@ export default function WatchLater() {
                 <motion.div
                   key={m._id || m.movieId || i}
                   layout
+                  
                   initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.9 }}
