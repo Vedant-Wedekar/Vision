@@ -229,6 +229,70 @@ export const movies = [
   },
   // Tollywood (Telugu) Movies
   {
+  id: 10021,
+  title: "Devara: Part 1",
+  year: 2024,
+  rating: "U/A",
+  category: "tollywood",
+  length: "2h 45m",
+  languages: "Telugu",
+  description:
+    "A coastal action saga where a feared ruler must protect his people against betrayal and bloodshed.",
+  keywords: ["Action", "Revenge", "Drama"],
+  img: "https://i.ytimg.com/vi/2vRxJm_z0OE/maxresdefault.jpg",
+  post: "https://m.media-amazon.com/images/M/MV5BYmI5NTljYWItMDhjMC00NDQwLWFhMjQtNWNjNDYzYzkwNGQ0XkEyXkFqcGc@._V1_QL75_UY281_CR18,0,190,281_.jpg",
+  // video: Devara1,
+  cast: ["Jr NTR", "Janhvi Kapoor", "Saif Ali Khan"]
+},
+{
+  id: 10022,
+  title: "OG",
+  year: 2025,
+  rating: "U/A",
+  category: "tollywood",
+  length: "2h 30m",
+  languages: "Telugu",
+  description:
+    "A dark gangster drama about the rise of a ruthless underworld legend known only as OG.",
+  keywords: ["Gangster", "Action", "Crime"],
+  img: "https://i.ytimg.com/vi/ZS41x1L6tVE/maxresdefault.jpg",
+  post: "https://upload.wikimedia.org/wikipedia/en/0/0c/OG_Poster.jpg",
+  // video: OGMovie,
+  cast: ["Pawan Kalyan", "Emraan Hashmi", "Priyanka Mohan"]
+},
+{
+  id: 10023,
+  title: "Game Changer",
+  year: 2025,
+  rating: "U/A",
+  category: "tollywood",
+  length: "2h 40m",
+  languages: "Telugu",
+  description:
+    "A political action drama where a visionary leader battles corruption to rebuild the system from within.",
+  keywords: ["Political", "Action", "Drama"],
+  img: "https://i.ytimg.com/vi/_dX9bQe1bwg/maxresdefault.jpg",
+  post: "https://upload.wikimedia.org/wikipedia/en/6/6a/Game_Changer_Telugu.jpg",
+  // video: GameChanger,
+  cast: ["Ram Charan", "Kiara Advani", "SJ Suryah"]
+},
+{
+  id: 10024,
+  title: "Salaar: Part 2 - Shouryanga Parvam",
+  year: 2025,
+  rating: "U/A",
+  category: "tollywood",
+  length: "2h 55m",
+  languages: "Telugu",
+  description:
+    "The war intensifies between Deva and Vardha as kingdoms collide in a brutal fight for supremacy.",
+  keywords: ["Action", "Gangster", "Dark"],
+  img: "https://i.ytimg.com/vi/JY7aKNrR5YY/maxresdefault.jpg",
+  post: "https://m.media-amazon.com/images/M/MV5BOGE3YWQ3NzAtNmEwOS00OGY5LThkNzEtZDg5NDRjMzRmMzhiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  // video: Salaar2,
+  cast: ["Prabhas", "Prithviraj Sukumaran", "Shruti Haasan"]
+},
+  {
     id: 11,
     title: "War 2",
     year: 2025,
@@ -563,9 +627,91 @@ export const movies = [
       "Investigative thriller series centered around challenging new crime cases in the capital city with strong social themes.",
     keywords: ["Crime", "Mystery", "Social"],
     img: "https://example.com/delhi-crime-s4.jpg",
-    video: Ban,post:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRjzmTltKzIU3WeoTuommRlRt8PgW0Xdd5Q&s",
+    video: Ban,
+    post:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRjzmTltKzIU3WeoTuommRlRt8PgW0Xdd5Q&s",
     cast: ["Shefali Shah", "Rajesh Tailang"]
   },
+  {
+  id: 10030,
+  title: "Mirzapur (Season 3)", caste: "shows",
+  year: 2024,
+  rating: "18+",
+  category: "webseries",
+  length: "10 Episodes",
+  languages: "Hindi",
+  description:
+    "The rivalry and power struggle in Purvanchal intensifies as Guddu, Golu and Kaleen Bhaiya return to claim Mirzapur.",
+  keywords: ["Crime", "Gangster", "Action"],
+  img: "https://i.ytimg.com/vi/3lxkGeO6p14/maxresdefault.jpg",
+  post: "https://images.justwatch.com/poster/318579955/s718/season-3.jpg",
+  // video: MirzapurS3,
+  cast: ["Ali Fazal", "Pankaj Tripathi", "Shweta Tripathi"]
+},
+{
+  id: 10031,
+  title: "Asur (Season 3)", caste: "shows",
+  year: 2025,
+  rating: "18+",
+  category: "webseries",
+  length: "8 Episodes",
+  languages: "Hindi",
+  description:
+    "A psychological thriller exploring mythology and technology, with a battle between righteousness and a mastermind villain.",
+  keywords: ["Thriller", "Mythology", "Crime"],
+  img: "https://i.ytimg.com/vi/sxwXXkFJTHM/maxresdefault.jpg",
+  post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk4B71eMt-ey7ft-0m6hz-DNWLswCL8FEMsQ&s",
+  // video: AsurS3,
+  cast: ["Arshad Warsi", "Barun Sobti"]
+},
+{
+  id: 10032,
+  title: "Panchayat (Season 3)", caste: "shows",
+  year: 2024,
+  rating: "U/A",
+  category: "webseries",
+  length: "8 Episodes",
+  languages: "Hindi",
+  description:
+    "A heartwarming light comedy-drama capturing rural politics, relationships, and struggles of a village secretary.",
+  keywords: ["Drama", "Comedy", "Slice of Life"],
+  img: "https://i.ytimg.com/vi/2B0e4nnyz2g/maxresdefault.jpg",
+  post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReRbsbzxwNDOSHGB3ybiACfu99WxN7ETZDUg&s",
+  // video: PanchayatS3,
+  cast: ["Jitendra Kumar", "Raghubir Yadav", "Neena Gupta"]
+},
+{
+  id: 10033,
+  title: "Kota Factory (Season 3)", caste: "shows",
+  year: 2024,
+  rating: "U/A",
+  category: "webseries",
+  length: "5 Episodes",
+  languages: "Hindi",
+  description:
+    "The journey of students preparing for IIT continues as they face pressure, competition, and personal growth.",
+  keywords: ["Drama", "Education", "Youth"],
+  img: "https://i.ytimg.com/vi/dKAc4YDnMEk/maxresdefault.jpg",
+  post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJXD7sqfPsi7obllbMe6q3D4hjZ-Jl_mKiug&s",
+  // video: KotaFactoryS3,
+  cast: ["Jitendra Kumar", "Mayur More", "Ranjan Raj"]
+},
+{
+  id: 10034,
+  title: "Farzi (Season 2)", caste: "shows",
+  year: 2025,
+  rating: "18+",
+  category: "webseries",
+  length: "8 Episodes",
+  languages: "Hindi",
+  description:
+    "A fast-paced crime thriller focusing on fake currency syndicates and a cat-and-mouse chase between police and a criminal mastermind.",
+  keywords: ["Crime", "Thriller", "Action"],
+  img: "https://i.ytimg.com/vi/RogVx8i2zL0/maxresdefault.jpg",
+  post: "https://m.media-amazon.com/images/M/MV5BNDY2OWMxNzgtZGQ4Ny00ODI3LTk3MTAtYjM4N2U4ZGI3ZGY1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  // video: FarziS2,
+  cast: ["Shahid Kapoor", "Vijay Sethupathi"]
+}
+,
   {
     id: 6,
     title: "Kesari Chapter 2: The Untold Story of Jallianwala Bagh",
@@ -601,7 +747,93 @@ export const movies = [
     video: null,
     cast: ["Ajay Devgn", "Vaani Kapoor"] 
   },
-
+{
+  id: 11000,
+  title: "Bhool Bhulaiyaa 3",
+  year: 2024,
+  caste: "popular",
+  rating: "7.5/10",
+  category: "hindi",
+  length: "2h 28m",
+  languages: "Hindi",
+  description:
+    "The horror-comedy returns as a new mysterious spirit challenges Rooh Baba, leading to unexpected twists and psychological tension.",
+  keywords: ["Horror", "Comedy", "Mystery"],
+  img: "https://i.ytimg.com/vi/L2D9BzTS1iA/maxresdefault.jpg",
+  post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoQH1uZr2eY5XVOkJsrSKWFPiMyczYDsZcA&s",
+  video: null,
+  cast: ["Kartik Aaryan", "Triptii Dimri", "Madhuri Dixit"]
+},
+{
+  id: 11001,
+  title: "Pushpa 2: The Rule (Hindi Dub)",
+  year: 2024,
+  caste: "popular",
+  rating: "8.4/10",
+  category: "hindi",
+  length: "2h 56m",
+  languages: "Hindi",
+  description:
+    "Pushpa returns stronger, rising through the underworld ranks while facing new enemies and expanding his empire.",
+  keywords: ["Action", "Crime", "Gangster"],
+  img: "https://i.ytimg.com/vi/_9uB64ghKX8/maxresdefault.jpg",
+  post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS99rpPOmBXu-cmp8corglBryW-nKJKCBHTJQ&sg",
+  video: null,
+  cast: ["Allu Arjun", "Rashmika Mandanna", "Fahadh Faasil"]
+},
+{
+  id: 11002,
+  title: "Singham Again",
+  year: 2025,
+  caste: "top-rated",
+  rating: "7.9/10",
+  category: "hindi",
+  length: "2h 38m",
+  languages: "Hindi",
+  description:
+    "The cop universe expands as Singham, Simmba, and Sooryavanshi unite to bring down a massive terrorist network.",
+  keywords: ["Action", "Police", "Thriller"],
+  img: "https://i.ytimg.com/vi/2GEp5vU3Q0Q/maxresdefault.jpg",
+  post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb2OxHB9uh-29e93mlLosSSGBNG0uFK3aAMg&s",
+  video: null,
+  cast: ["Ajay Devgn", "Ranveer Singh", "Akshay Kumar", "Kareena Kapoor"]
+},
+{
+  id: 11003,
+  title: "Jawan",
+  year: 2023,
+  caste: "top-rated",
+  rating: "8.0/10",
+  category: "hindi",
+  length: "2h 45m",
+  languages: "Hindi",
+  description:
+    "An action-packed thriller starring a vigilante hero who takes on corruption and designs a high-stakes plan that changes everything.",
+  keywords: ["Action", "Thriller", "Drama"],
+  img: "https://i.ytimg.com/vi/2LqzF5WauAw/maxresdefault.jpg",
+  post: "https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYWQzODczNGYwLTRlNmQtMTFlZi1iMzFjLWM3ZTc5MGQ0OWM0MS5qcGc=",
+  video: null,
+  cast: ["Shah Rukh Khan", "Nayanthara", "Vijay Sethupathi"]
+}
+,
+{
+  id: 11004,
+  title: "Stree 2",
+  year: 2024,
+  caste: "popular",
+  rating: "7.3/10",
+  category: "hindi",
+  length: "2h 10m",
+  languages: "Hindi",
+  description:
+    "The town of Chanderi faces a new supernatural threat as the legend of Stree returns with bigger mysteries.",
+  keywords: ["Horror", "Comedy", "Mystery"],
+  img: "https://i.ytimg.com/vi/B49dTbLfwhk/maxresdefault.jpg",
+  post: "https://upload.wikimedia.org/wikipedia/en/a/a1/Stree_2.jpg",
+  video: null,
+  cast: ["Rajkummar Rao", "Shraddha Kapoor", "Pankaj Tripathi"]
+}
+,
   // (You can add more to fill 10 in each category similarly)
 
   {
@@ -1307,4 +1539,239 @@ export const movies = [
     video: null,
     cast: ["Shah Rukh Khan", "Deepika Padukone", "John Abraham"]
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+  id: 10000,
+  title: "Deadpool & Wolverine",
+  year: 2024,
+  category: "hollywood",
+  rating: "R",
+  length: "2h 07m",
+  languages: "English",
+  description:
+    "Deadpool teams up with Wolverine in a multiversal adventure filled with chaos, comedy, and fourth-wall-breaking madness.",
+  keywords: ["Action", "Comedy", "Superhero", "Marvel"],
+  img: "https://i.ytimg.com/vi/73_1biulkYk/maxresdefault.jpg",
+  // video: DeadpoolWolverine,
+  post: "https://upload.wikimedia.org/wikipedia/en/4/4c/Deadpool_%26_Wolverine_poster.jpg",
+  cast: ["Ryan Reynolds", "Hugh Jackman", "Emma Corrin"]
+},
+{
+  id: 10001,
+  title: "Dune: Part Two",
+  year: 2024,
+  category: "hollywood",
+  rating: "PG-13",
+  length: "2h 46m",
+  languages: "English",
+  description:
+    "Paul Atreides unites with Chani and the Fremen to seek vengeance against those who destroyed his family.",
+  keywords: ["Sci-Fi", "Epic", "Adventure"],
+  img: "https://i.ytimg.com/vi/_YUzQa_1RCE/maxresdefault.jpg",
+  // video: Dune2,
+  post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq8P5uwVwfPAX9FnmiLtcFECf8l28lS9FN-g&s",
+  cast: ["Timothée Chalamet", "Zendaya", "Austin Butler"]
+},
+{
+  id: 10002,
+  title: "Godzilla x Kong: The New Empire",
+  year: 2024,
+  category: "hollywood",
+  rating: "PG-13",
+  length: "1h 55m",
+  languages: "English",
+  description:
+    "Godzilla and Kong must join forces to face a terrifying new threat that lurks within Earth.",
+  keywords: ["Action", "Monster", "Fantasy"],
+  img: "https://i.ytimg.com/vi/Qvdy5dJ6LkI/maxresdefault.jpg",
+  // video: GodzillaKong,
+  post: "https://m.media-amazon.com/images/M/MV5BMTY0N2MzODctY2ExYy00OWYxLTkyNDItMTVhZGIxZjliZjU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  cast: ["Rebecca Hall", "Brian Tyree Henry", "Dan Stevens"]
+},
+{
+  id: 10003,
+  title: "Venom: The Last Dance",
+  year: 2024,
+  category: "hollywood",
+  rating: "PG-13",
+  length: "1h 49m",
+  languages: "English",
+  description:
+    "Eddie Brock and Venom face their final and most personal battle yet.",
+  keywords: ["Action", "Sci-Fi", "Superhero"],
+  img: "https://i.ytimg.com/vi/DUWgqTnON0A/maxresdefault.jpg",
+  // video: Venom3,
+  post: "https://m.media-amazon.com/images/M/MV5BZDMyYWU4NzItZDY0MC00ODE2LTkyYTMtMzNkNDdmYmFhZDg0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  cast: ["Tom Hardy", "Chiwetel Ejiofor", "Juno Temple"]
+},
+{
+  id: 10004,
+  title: "Inside Out 2",
+  year: 2024,
+  category: "hollywood",
+  rating: "PG",
+  length: "1h 36m",
+  languages: "English",
+  description:
+    "Riley experiences new emotions as she enters her teenage years.",
+  keywords: ["Animation", "Family", "Comedy"],
+  img: "https://i.ytimg.com/vi/YwddLtVtn_c/maxresdefault.jpg",
+  // video: InsideOut2,
+  post: "https://lumiere-a.akamaihd.net/v1/images/p_insideout2_now_available_disneyplus_d24c051c.jpeg",
+  cast: ["Amy Poehler", "Maya Hawke", "Phyllis Smith"]
+},
+{
+  id: 10005,
+  title: "Bad Boys: Ride or Die",
+  year: 2024,
+  category: "hollywood",
+  rating: "R",
+  length: "1h 55m",
+  languages: "English",
+  description:
+    "Detectives Mike and Marcus return to uncover corruption that hits close to home.",
+  keywords: ["Action", "Comedy", "Crime"],
+  img: "https://i.ytimg.com/vi/Ojyz8_KMESg/maxresdefault.jpg",
+  // video: BadBoys4,
+  post: "https://m.media-amazon.com/images/M/MV5BZWNjZWUwNDgtYTM4ZC00Zjk0LTg3ZWItNGEyZmVkZTIxZDk0XkEyXkFqcGc@._V1_.jpg",
+  cast: ["Will Smith", "Martin Lawrence"]
+},
+{
+  id: 10006,
+  title: "Kingdom of the Planet of the Apes",
+  year: 2024,
+  category: "hollywood",
+  rating: "PG-13",
+  length: "2h 25m",
+  languages: "English",
+  description:
+    "Generations after Caesar’s reign, a new ape empire rises as humans struggle to survive.",
+  keywords: ["Sci-Fi", "Action", "Drama"],
+  img: "https://i.ytimg.com/vi/QGd5w2wAlpE/maxresdefault.jpg",
+  // video: PlanetApes2024,
+  post: "https://m.media-amazon.com/images/M/MV5BZDRlZTc3YTItOTk3Yi00NmU4LWFiOGUtNjgwMDZjNjIzNTU1XkEyXkFqcGc@._V1_.jpg",
+  cast: ["Owen Teague", "Freya Allan", "Kevin Durand"]
+},
+{
+  id: 10007,
+  title: "Kung Fu Panda 4",
+  year: 2024,
+  category: "hollywood",
+  rating: "PG",
+  length: "1h 34m",
+  languages: "English",
+  description:
+    "Po searches for his successor while facing a powerful new villain, The Chameleon.",
+  keywords: ["Animation", "Comedy", "Adventure"],
+  img: "https://i.ytimg.com/vi/YM3LHnhgGv8/maxresdefault.jpg",
+  // video: KFP4,
+  post: "https://m.media-amazon.com/images/M/MV5BMzJlNGYxYzQtOTg4MC00OTMyLTkwYzMtZDRlNTgwY2YwOWYxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  cast: ["Jack Black", "Awkwafina", "Bryan Cranston"]
+},
+{
+  id: 10008,
+  title: "The Marvels",
+  year: 2023,
+  category: "hollywood",
+  rating: "PG-13",
+  length: "1h 45m",
+  languages: "English",
+  description:
+    "Captain Marvel, Monica Rambeau, and Ms. Marvel join forces to stop intergalactic danger.",
+  keywords: ["Superhero", "Adventure", "Sci-Fi"],
+  img: "https://i.ytimg.com/vi/iuk77TjvfmE/maxresdefault.jpg",
+  // video: TheMarvels,
+  post: "https://m.media-amazon.com/images/M/MV5BYzczOWM4MzItMWMyOS00ZDczLWIxMzctNzBmYTgzOTI1MzI3XkEyXkFqcGc@._V1_.jpg",
+  cast: ["Brie Larson", "Iman Vellani", "Teyonah Parris"]
+},
+{
+  id: 10009,
+  title: "Aquaman and the Lost Kingdom",
+  year: 2023,
+  category: "hollywood",
+  rating: "PG-13",
+  length: "2h 04m",
+  languages: "English",
+  description:
+    "Aquaman battles a deadly new threat that endangers both Atlantis and the surface world.",
+  keywords: ["Superhero", "Adventure"],
+  img: "https://i.ytimg.com/vi/UGc5Tzz19UY/maxresdefault.jpg",
+  // video: Aquaman2,
+  post: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7te5zGvg6I1flYJTaI0tPiDcfKlBq6DeTIA&s",
+  cast: ["Jason Momoa", "Patrick Wilson", "Yahya Abdul-Mateen II"]
+},
+{
+  id: 10010,
+  title: "Wonka",
+  year: 2023,
+  category: "hollywood",
+  rating: "PG",
+  length: "1h 56m",
+  languages: "English",
+  description:
+    "A young Willy Wonka dreams of opening the world’s greatest chocolate factory.",
+  keywords: ["Fantasy", "Musical", "Family"],
+  img: "https://i.ytimg.com/vi/otNh9bTjXWg/maxresdefault.jpg",
+  // video: Wonka,
+  post: "https://m.media-amazon.com/images/M/MV5BM2Y1N2ZhNjctYjVhZC00MDg2LWFhNTItMzI3ZjAwZDhjYmFiXkEyXkFqcGc@._V1_.jpg",
+  cast: ["Timothée Chalamet", "Olivia Colman", "Keegan-Michael Key"]
+},
+{
+  id: 10011,
+  title: "Oppenheimer",
+  year: 2023,
+  category: "hollywood",
+  rating: "R",
+  length: "3h 00m",
+  languages: "English",
+  description:
+    "The story of J. Robert Oppenheimer and the creation of the atomic bomb.",
+  keywords: ["Drama", "History", "Biography"],
+  img: "https://i.ytimg.com/vi/uYPbbksJxIg/maxresdefault.jpg",
+  // video: Oppenheimer,
+  post: "https://m.media-amazon.com/images/M/MV5BM2RmYmVmMzctMzc5Ny00MmNiLTgxMGUtYjk1ZDRhYjA2YTU0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  cast: ["Cillian Murphy", "Robert Downey Jr.", "Emily Blunt"]
+}
 ];
+
+
+
