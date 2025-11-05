@@ -11,9 +11,9 @@ const Navbar = () => {
             className="w-8 bg-black p-2 rounded-2xl cursor-pointer"
             src={assets.arrow_left}
             alt=""
-          
             onClick={()=>naviagte(-1)}
           />
+          
           <img
             className="w-8 bg-black p-2 rounded-2xl cursor-pointer"
             src={assets.arrow_right}
