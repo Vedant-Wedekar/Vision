@@ -58,7 +58,7 @@ export default function Player() {
       <div className="relative w-full max-h-[70vh] bg-black overflow-hidden">
         <video
           ref={videoRef}
-          src={movie.video}
+          src={movie.LV}
           autoPlay
           className="w-full h-full object-cover"
         />
@@ -124,8 +124,8 @@ export default function Player() {
               className="flex flex-col items-center bg-white/10 p-4 rounded-xl hover:bg-white/20 transition"
             >
               <img
-                src={actor.image}
-                alt={actor.name}
+                src={actor.img}
+                // alt={actor.name}
                 className="w-24 h-24 object-cover rounded-full shadow-lg"
               />
               <p className="mt-3 text-white font-medium">{actor.name}</p>
