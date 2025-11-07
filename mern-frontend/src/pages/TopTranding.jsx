@@ -15,10 +15,12 @@ export default function TopTrending({ addToWatchLater }) {
   ];
 
   return (
-    <div className="bg-[#0F1014] min-h-screen ml-20 flex a">
+    // removed overflow-x-hidden from here
+    <div className="bg-[#0F1014] min-h-screen ml-20 ">
       <Sidebar />
 
-      <div className="flex-1 flex flex-col">
+      {/* add min-w-0 so this flex child can shrink properly and not force page overflow */}
+      <div className="flex-1 flex flex-col min-w-0">
         <Header />
 
         <div className="text-white px-6 pt-20">
@@ -27,20 +29,27 @@ export default function TopTrending({ addToWatchLater }) {
           {categories.map((cat) => (
             <div key={cat.key} className="mb-12">
               <h2 className="text-2xl font-semibold mb-4">{cat.label}</h2>
-              <div className="flex space-x-4 overflow-x-auto scrollbar-hide">
+
+              {/* scroll row: flex-nowrap so cards stay in one horizontal line,
+                  overflow-x-auto to allow horizontal scroll,
+                  w-full and max-w-full to avoid expanding beyond parent */}
+              <div className="flex space-x-4 overflow-x-auto scrollbar-hide w-full max-w-full flex-nowrap">
                 {movies
                   .filter((m) => m.category === cat.key)
                   .map((movie) => (
                     <div
                       key={movie.id}
-                      className="relative group min-w-[220px] max-w-[220px] h-[330px] rounded-lg hover:scale-105  transform transition-all duration-500 "
+                      // shrink-0 prevents the card from shrinking so it remains scrollable
+                      className="relative group shrink-0 min-w-[220px] max-w-[220px] h-[330px] rounded-lg hover:scale-105 transform transition-all duration-500"
                     >
                       <img
                         src={movie.post}
                         alt={movie.title}
-                        className="w-full h-full object-cover  transition duration-500"
+                        className="w-full h-full object-cover transition duration-500 rounded-lg"
                       />
-                        <div className="absolute mt-50 inset-0  opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center bg-black/50 backdrop-blur-md p-3 rounded-2xl">
+
+                      <div className="absolute mt-50 inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center bg-black/50 backdrop-blur-md p-3 rounded-2xl">
+                        {/* Optional video preview (commented out) */}
                         {/* <video
                           src={movie.video}
                           autoPlay
@@ -48,16 +57,19 @@ export default function TopTrending({ addToWatchLater }) {
                           loop
                           className="w-full h-40 object-cover rounded-md mb-3"
                         /> */}
-                        
-                        <h3 className="text-lg font-semibold mb-2">{movie.title}</h3>
 
-                        <div className="flex gap-3">
+                        <h3 className="text-lg font-semibold mb-2">
+                          {movie.title}
+                        </h3>
+
+                        <div className="flex gap-3 ">
                           <Link
                             to={`/player/${movie.id}`}
                             className="px-3 py-1 bg-red-600 rounded text-sm hover:bg-red-700 transition"
                           >
                             ▶ Watch Now
                           </Link>
+
                           <button
                             onClick={() => addToWatchLater(movie)}
                             className="px-3 py-1 bg-gray-700 rounded text-sm hover:bg-gray-600 transition"
@@ -73,6 +85,7 @@ export default function TopTrending({ addToWatchLater }) {
           ))}
         </div>
       </div>
+
       <Footer />
     </div>
   );
