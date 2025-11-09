@@ -16,6 +16,7 @@ const Footer = () => {
      Unlimited Stories. One Place.
     </p>
 
+
     <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
       {/* <li>
         <a
