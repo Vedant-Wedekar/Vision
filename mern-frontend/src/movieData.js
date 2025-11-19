@@ -3,6 +3,7 @@ import L2 from './Video/L2.mp4'
 import Pan from './Video/pan.mp4'
 import Loo from './Video/LOO.mp4'
 import MMM from './Video/MMM.mp4'
+import Baa from './Video/bbb.mp4'
 export const movies = [
   // existing:
  {
@@ -353,7 +354,7 @@ export const movies = [
     "description": "The epic conclusion to the Mahishmati saga — a battle for the throne, family secrets revealed and large-scale war sequences.",
     "keywords": ["Epic", "Action", "Drama", "Fantasy"],
     "img": "https://upload.wikimedia.org/wikipedia/en/7/76/Baahubali_the_Conclusion_poster.jpg",
-    "video": null,
+    "video": Baa,
     "cast": ["Prabhas", "Rana Daggubati", "Anushka Shetty", "Tamannaah Bhatia"]
   },
   {
