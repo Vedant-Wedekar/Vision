@@ -4,6 +4,9 @@ import Pan from './Video/pan.mp4'
 import Loo from './Video/LOO.mp4'
 import MMM from './Video/MMM.mp4'
 import Baa from './Video/bbb.mp4'
+import EL from './Video/EL.mp4'
+import DEM from './Video/Demon.mp4'
+import STI from './Video/STI.mp4'
 export const movies = [
   // existing:
  {
@@ -21,7 +24,7 @@ export const movies = [
   post:
     "https://i0.wp.com/pixarpost.com/wp-content/uploads/2024/11/ELIO_Teaser_2nd_Intro_1s_v4.0_A_Mech11_FS.jpg?resize=1080%2C1600&ssl=1",
   video: Ban,
-  LV:L2,
+  LV:EL,
   cast: [
     {
       name: "Adrian Molina",
@@ -69,7 +72,7 @@ export const movies = [
       "A live-action/CGI remake of Disney’s beloved classic where a spirited Hawaiian girl forms an unexpected bond with an alien experiment, Stitch.",
     keywords: ["Family", "Adventure", "Comedy", "Remake"],
     img: "https://i.ytimg.com/vi/euYGJkMoPTM/maxresdefault.jpg",
-    video: Loo,
+    video: Loo,LV:STI,
     post:"https://upload.wikimedia.org/wikipedia/en/5/56/Lilo_%26_Stitch_2025_Theatrical_Poster.jpg",
     cast: ["Maia Agudong", "Chris Sanders", "Sydney Elizbeth Agudong"]
   },
@@ -864,6 +867,7 @@ export const movies = [
 
     length: "2h 35m",  // 155 min = 2h35m :contentReference[oaicite:0]{index=0}  
     languages: "Japanese (with dubs/subs)", 
+    LV:DEM,
     description:
       "The Demon Slayer Corps plunge into the Infinity Castle to defeat Muzan, navigating through alternate dimensions and facing the most powerful demons. :contentReference[oaicite:1]{index=1}",
     keywords: ["Action", "Fantasy", "Anime", "Adventure"],
